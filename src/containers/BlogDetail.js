@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import DocumentTitle from "react-document-title";
-import { Row, Col } from "antd";
-import Arrow_Button from "../assets/images/scroll_down_arrow.svg";
-import RecentlyAdded from "../components/Blog/RecentlyAdded";
+import { Row, Col, Anchor, Collapse } from 'antd';
+import Press from "../assets/images/press-main-image.jpg";
+import HeroImage from '../components/HeroImage';
+import { HashLink } from 'react-router-hash-link';
 import BackAndForth from "../components/Blog/BackAndForth";
 
-var showdown = require("showdown");
+const Panel = Collapse.Panel;
 var contentful = require("contentful");
+var showdown = require("showdown");
+var moment = require('moment');
+const { Link } = Anchor;
+
 
 class BlogDetail extends Component {
   constructor(props) {
@@ -65,20 +70,14 @@ class BlogDetail extends Component {
           }
         >
           <div className="blog-detail-wrapper">
-            <div
-              className="blog-header"
-            >
 
-              <div className="title-content">
-                <div className="title-content-inner">
-                  <h1 className="blue">{this.state.post.fields.title}</h1>
-                </div>
-              </div>
-            </div>
-            <div className="blog-content-wrapper">
-              <Row gutter={16}>
-                <Col xs={{ span: 24 }} md={{ span: 24 }} lg={{ span: 16 }}>
-                  <div className="description">
+
+         <Row className="gutter-row" id="a1" gutter={45} >
+          <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
+            <div id="blog1" className="post p-5 pt-0 text-center ml-auto mr-auto">
+              <h5 className="post-title"><b>{ this.state.post.fields.title.toUpperCase()}</b></h5>
+              <h3 className="section-header-blue">{moment(this.state.post.fields.publishDate).format('MMMM DD, Y')}</h3>
+              <div className="description">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: this.converter.makeHtml(
@@ -86,10 +85,12 @@ class BlogDetail extends Component {
                         )
                       }}
                     />
-                  </div>
-                </Col>
-              </Row>
+              </div>
+
             </div>
+              </Col>
+
+            </Row>
             <BackAndForth
               entries={this.state.allEntries}
               post={this.state.post}

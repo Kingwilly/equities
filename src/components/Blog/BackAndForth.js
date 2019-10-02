@@ -33,7 +33,6 @@ class BackAndForth extends Component {
         <div
           className="previous-article"
         >
-          <img src={Arrow_Button} alt="Arrow" />
           <div className="previous-content">
             <p className="previous-title">PREVIOUS</p>
             <p className="previous-article-title">
@@ -73,7 +72,6 @@ class BackAndForth extends Component {
         <div
           className="next-article"
 s        >
-          <img src={Arrow_Button} alt="Arrow" />
           <div className="next-content">
             <p className="next-title">NEXT</p>
             <p className="next-article-titlenormalizenormalize">{previousPost.fields.title}</p>

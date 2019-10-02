@@ -99,7 +99,7 @@ class BlogHome extends Component {
               
           <Row className="gutter-row" id="a1" gutter={45} >
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-            <div id="a1" className="post p-5 pt-0 text-center ml-auto mr-auto">
+            <div id="blog1" className="post p-5 pt-0 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[0].fields.publishDate).format('MMMM DD, Y')}</h3>
               <h5 className="post-title"><b>{ this.state.entries[0].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[0].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
@@ -120,8 +120,8 @@ class BlogHome extends Component {
                 style={{ zIndex: 9999, paddingTop: 30 }}
                 className="anchor-menu">
 						    <Anchor affix={true} offsetTop={223} showInkInFixed={true}>
-                  <Link className="my-4" href="#blog1" title={this.state.entries[0].fields.title.toUpperCase()} />
-                  <Link className="my-4" href="#blog2" title={this.state.entries[1].fields.title.toUpperCase()} />
+                  <Link href="#blog1" title={this.state.entries[0].fields.title.toUpperCase()} />
+                  <Link href="#blog2" title={this.state.entries[1].fields.title.toUpperCase()} />
                   <Link href="#blog3" title={this.state.entries[2].fields.title.toUpperCase()} />
                 </Anchor>
               </Col>
@@ -129,7 +129,7 @@ class BlogHome extends Component {
             <Row className="gutter-row" id="a2" gutter={45} style={{paddingTop: 30}}>
               <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
 
-            <div id="a2" className="post p-5 text-center ml-auto mr-auto">
+            <div id="blog2" className="post p-5 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[1].fields.publishDate).format('MMMM DD, Y')}</h3>
               <h5 className="post-title"><b>{ this.state.entries[1].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[1].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
@@ -148,7 +148,7 @@ class BlogHome extends Component {
           </Row>
           <Row className="gutter-row" id="a3" gutter={45} style={{paddingTop: 30}}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-            <div id="a3" className="post p-5 text-center ml-auto mr-auto">
+            <div id="blog3" className="post p-5 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[2].fields.publishDate).format('MMMM DD, Y')}</h3>
               <h5 className="post-title"><b>{ this.state.entries[2].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[2].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
