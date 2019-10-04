@@ -5582,7 +5582,7 @@ svg {
   display: none;
 }
 
-// RECENT ADDED
+// RECENTLY ADDED
 .blue-bg {
 
   background: #1d4a63 !important;
@@ -5644,8 +5644,7 @@ svg {
   font-family: proxima-nova-black, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 1vw;
-  line-height: 1vw;
+  font-size: 14px;
 }
 
 .read-more {
