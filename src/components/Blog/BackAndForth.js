@@ -60,11 +60,11 @@ class BackAndForth extends Component {
     if (nextPostLocation === totalPosts) {
       nextPostLocation = 0;
     }
-    var previousPost = this.props.entries[nextPostLocation];
+    var nextPost = this.props.entries[nextPostLocation];
     return (
       <Link
         to={
-          "/our-journal/" + previousPost.sys.id + "/" + previousPost.fields.slug
+          "/our-journal/" + nextPost.sys.id + "/" + nextPost.fields.slug
         }
       >
           <div className="p-3 m-5">
@@ -73,7 +73,7 @@ class BackAndForth extends Component {
               <span className="arrow-after"></span>
             </span>
             <br />
-            <h3 className="float-right ml-auto articles-footer">{previousPost.fields.title.toUpperCase()}</h3>
+            <h3 className="float-right ml-auto articles-footer">{nextPost.fields.title.toUpperCase()}</h3>
         </div>
       </Link>
     );
