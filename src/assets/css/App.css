@@ -5629,11 +5629,30 @@ svg {
 
 .post {
 
-  border-bottom: #5a5351 1px solid;
+  border-bottom: #a3a098 1px solid;
 }
 
 .readmore {
 
   border-radius: 0px;
   padding: 16px;
+}
+
+.articles-footer {
+
+  color: #1d4a63 !important;
+  font-family: proxima-nova-black, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+.read-more {
+
+  border-radius: 0px !important;
+  border: #a3a098 1px solid !important;
+  color: #000 !important;
+  font-size: 1vw !important;
+  font-weight: bold;
 }

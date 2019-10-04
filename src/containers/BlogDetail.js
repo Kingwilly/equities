@@ -76,8 +76,8 @@ class BlogDetail extends Component {
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
             <div id="blog1" className="post p-5 pt-0 text-center ml-auto mr-auto">
               <h5 className="post-title"><b>{ this.state.post.fields.title.toUpperCase()}</b></h5>
-              <h3 className="section-header-blue">{moment(this.state.post.fields.publishDate).format('MMMM DD, Y')}</h3>
-              <div className="description">
+              <h3 className="section-header-blue my-5">{moment(this.state.post.fields.publishDate).format('MMMM DD, Y')}</h3>
+              <div className="description my-5">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: this.converter.makeHtml(
@@ -100,7 +100,7 @@ class BlogDetail extends Component {
       );
     } else {
       return (
-        <DocumentTitle title={"MRC"}>
+        <DocumentTitle title={"Melillo Equities"}>
           <div
             className="about-wrapper portfolio-detail-wrapper"
             style={{ minHeight: "100vh" }}

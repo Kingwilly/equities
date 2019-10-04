@@ -177,6 +177,11 @@ class Navigation extends React.Component {
                                 <span>INVESTOR LOGIN</span>
                             </a>
                         </Menu.Item>
+                        <Menu.Item key="/our-journal">
+                            <NavLink to="/our-journal">
+                                <span>OUR JOURNAL</span>
+                            </NavLink>
+                        </Menu.Item>
                         <Menu.Item
                             key="/contact"
                             style={{ borderBottom: "1px solid #dddddd" }}

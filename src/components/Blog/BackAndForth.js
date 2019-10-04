@@ -36,7 +36,7 @@ class BackAndForth extends Component {
               <span className="arrow-after"></span>
             </span>
             <br />
-            <h3 className="float-left mr-auto">PREVIOUS ARTICLE</h3>
+            <h3 className="float-left mr-auto articles-footer">PREVIOUS ARTICLE</h3>
           </div>
       </Link>
     );
@@ -73,7 +73,7 @@ class BackAndForth extends Component {
               <span className="arrow-after"></span>
             </span>
             <br />
-            <h3 className="float-right ml-auto">{previousPost.fields.title.toUpperCase()}</h3>
+            <h3 className="float-right ml-auto articles-footer">{previousPost.fields.title.toUpperCase()}</h3>
         </div>
       </Link>
     );

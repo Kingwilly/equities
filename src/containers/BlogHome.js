@@ -101,7 +101,7 @@ class BlogHome extends Component {
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
             <div id="blog1" className="post p-5 pt-0 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[0].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title"><b>{ this.state.entries[0].fields.title.toUpperCase()}</b></h5>
+              <h5 className="post-title my-5"><b>{ this.state.entries[0].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[0].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
               <HashLink
                   to={
@@ -111,7 +111,7 @@ class BlogHome extends Component {
                 this.state.entries[0].fields.slug
                 }
               >
-              <button className="btn btn-lg btn-outline-dark py-3 px-5 mt-3"><i>read more</i></button>
+              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
               </HashLink>
             </div>
               </Col>
@@ -131,7 +131,7 @@ class BlogHome extends Component {
 
             <div id="blog2" className="post p-5 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[1].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title"><b>{ this.state.entries[1].fields.title.toUpperCase()}</b></h5>
+              <h5 className="post-title my-5"><b>{ this.state.entries[1].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[1].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
               <HashLink
                   to={
@@ -141,7 +141,7 @@ class BlogHome extends Component {
                 this.state.entries[1].fields.slug
                 }
               >
-              <button className="btn btn-lg btn-outline-dark py-3 px-5 mt-3"><i>read more</i></button>
+              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
               </HashLink>            
               </div>
             </Col>
@@ -150,7 +150,7 @@ class BlogHome extends Component {
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
             <div id="blog3" className="post p-5 text-center ml-auto mr-auto">
               <h3 className="section-header-blue">{moment(this.state.entries[2].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title"><b>{ this.state.entries[2].fields.title.toUpperCase()}</b></h5>
+              <h5 className="post-title my-5"><b>{ this.state.entries[2].fields.title.toUpperCase()}</b></h5>
               <p>{this.state.entries[2].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
               <HashLink
                   to={
@@ -160,7 +160,7 @@ class BlogHome extends Component {
                 this.state.entries[2].fields.slug
                 }
               >
-              <button className="btn btn-lg btn-outline-dark py-3 px-5 mt-3"><i>read more</i></button>
+              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
               </HashLink>            
               </div>
               </Col>
