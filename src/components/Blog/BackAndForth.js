@@ -30,16 +30,14 @@ class BackAndForth extends Component {
           "/our-journal/" + previousPost.sys.id + "/" + previousPost.fields.slug
         }
       >
-        <div
-          className="previous-article"
-        >
-          <div className="previous-content">
-            <p className="previous-title">PREVIOUS</p>
-            <p className="previous-article-title">
-              {previousPost.fields.title}
-            </p>
+          <div className="p-3 m-5">
+            <span className="home-hero-arrow-left arrow float-left mr-auto">
+              <span className="arrow-before-noHov"></span>
+              <span className="arrow-after"></span>
+            </span>
+            <br />
+            <h3 className="float-left mr-auto">PREVIOUS ARTICLE</h3>
           </div>
-        </div>
       </Link>
     );
   }
@@ -69,13 +67,13 @@ class BackAndForth extends Component {
           "/our-journal/" + previousPost.sys.id + "/" + previousPost.fields.slug
         }
       >
-        <div
-          className="next-article"
-s        >
-          <div className="next-content">
-            <p className="next-title">NEXT</p>
-            <p className="next-article-titlenormalizenormalize">{previousPost.fields.title}</p>
-          </div>
+          <div className="p-3 m-5">
+            <span className="home-hero-arrow-right arrow float-right ml-auto">
+              <span className="arrow-before-noHov"></span>
+              <span className="arrow-after"></span>
+            </span>
+            <br />
+            <h3 className="float-right ml-auto">{previousPost.fields.title.toUpperCase()}</h3>
         </div>
       </Link>
     );
@@ -86,22 +84,26 @@ s        >
     }
     return (
       <div className="next-prev-article">
-        <Row gutter={16}>
-          <Col
-            md={{ span: 24 }}
-            lg={{ span: 12 }}
-            sm={{ span: 24 }}
-            xs={{ span: 24 }}
-          >
-            {this.renderPreviousPost()}
+        <Row>
+					<Col
+						className="portfolio-block portfolio-text-block portfolio-block-left float-left mr-auto"
+						xs={24}
+						md={8}>
+              <div className="portfolio-block-outer">
+							<div className="footer-left">
+              <h3 className="portfolio-callout left">{this.renderPreviousPost()}</h3>
+            </div>
+            </div>
           </Col>
           <Col
-            md={{ span: 24 }}
-            lg={{ span: 12 }}
-            sm={{ span: 24 }}
-            xs={{ span: 24 }}
-          >
-            {this.renderNextPost()}
+						className="portfolio-block portfolio-text-block portfolio-block-right float-right ml-auto"
+						xs={24}
+						md={8}>
+              <div className="portfolio-block-outer">
+							<div className="footer-right">
+              <h3 className="portfolio-callout right">{this.renderNextPost()}</h3>
+            </div>
+            </div>
           </Col>
         </Row>
       </div>

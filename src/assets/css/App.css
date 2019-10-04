@@ -294,6 +294,13 @@ p {
   transform: scaleX(-1);
 }
 
+.home-hero-arrow-left {
+
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: auto;
+}
+
 .arrow-down {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
