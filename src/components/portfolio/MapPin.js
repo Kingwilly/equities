@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line 
 import { Tooltip, Modal, Row, Col, Badge } from "antd";
 import MapPinLocation from "../../assets/images/map-pin.png";
 var Carousel = require("react-responsive-carousel").Carousel;
@@ -23,7 +24,7 @@ class MapPin extends React.Component {
             </div>
             <Carousel showThumbs={true}>
               {this.props.imageCarasoul.map(image => {
-                return <img src={image} />;
+                return <img src={image} alt={image} />;
               })}
             </Carousel>
           </div>
@@ -32,7 +33,7 @@ class MapPin extends React.Component {
         return (
           <Carousel showThumbs={true}>
             {this.props.imageCarasoul.map(image => {
-              return <img src={image} />;
+              return <img src={image} alt={image} />;
             })}
           </Carousel>
         );

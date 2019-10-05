@@ -177,9 +177,9 @@ class Navigation extends React.Component {
                                 <span>INVESTOR LOGIN</span>
                             </a>
                         </Menu.Item>
-                        <Menu.Item key="/our-journal">
-                            <NavLink to="/our-journal">
-                                <span>OUR JOURNAL</span>
+                        <Menu.Item key="/press">
+                            <NavLink to="/press">
+                                <span>PRESS</span>
                             </NavLink>
                         </Menu.Item>
                         <Menu.Item

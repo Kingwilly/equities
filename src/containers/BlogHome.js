@@ -4,7 +4,7 @@ import { Row, Col, Anchor, Collapse } from 'antd';
 import Press from "../assets/images/press-main-image.jpg";
 import HeroImage from '../components/HeroImage';
 import { HashLink } from 'react-router-hash-link';
-
+// eslint-disable-next-line 
 const Panel = Collapse.Panel;
 var contentful = require("contentful");
 var showdown = require("showdown");
@@ -19,7 +19,7 @@ class BlogPostPreview extends Component {
         <HashLink
           style={{ textDecoration: "none" }}
           to={
-            "/our-journal/" +
+            "/press/" +
             this.props.post.sys.id +
             "/" +
             this.props.post.fields.slug
@@ -61,7 +61,7 @@ class BlogHome extends Component {
     accessToken:
       "60b882d2e141112b676c9446202ad4afb29121fab9b9e62ce5efe5ed01a964cf"
   });
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     var that = this;
     this.client
       .getEntries({
@@ -87,14 +87,14 @@ class BlogHome extends Component {
   renderPress() {
     return this.state.entries.map(entry => 
 
-      <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
+      <Col key={entry.fields.publishDate} className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
         <div id={entry.fields.title} className="post p-5 pt-0 text-center ml-auto mr-auto">
           <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
           <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
           <p>{entry.fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
           <HashLink
               to={
-              "/our-journal/" +
+              "/press/" +
             entry.sys.id +
             "/" +
             entry.fields.slug
@@ -111,7 +111,7 @@ class BlogHome extends Component {
 
     return this.state.entries.map(entry => 
       
-      <Link href={'#' + entry.fields.title} title={entry.fields.title.toUpperCase()} />
+      <Link key={entry.fields.title} href={'#' + entry.fields.title} title={entry.fields.title.toUpperCase()} />
       )
   }
   
@@ -121,7 +121,7 @@ class BlogHome extends Component {
     if (this.state.entries) {
       return (
         <div>
-          <DocumentTitle title={"Blog | Melillo Equities"}>
+          <DocumentTitle title={"PRESS | Melillo Equities"}>
             <div>
               <HeroImage
                     className="hero-bottom-header" 
@@ -147,7 +147,7 @@ class BlogHome extends Component {
       );
     } else {
       return (
-        <DocumentTitle title={"Blog | Melillo Equities"}>
+        <DocumentTitle title={"Melillo Equities"}>
           <div
             className="about-wrapper portfolio-detail-wrapper"
             style={{ minHeight: "100vh" }}

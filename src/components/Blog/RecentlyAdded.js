@@ -7,7 +7,7 @@ class RecentlyAdded extends Component {
       console.log(post);
       return (
         <Link
-          to={"/our-journal/" + post.sys.id + "/" + post.fields.slug}
+          to={"/press/" + post.sys.id + "/" + post.fields.slug}
           className="related-article"
           style={{ marginBottom: "30px" }}
         >

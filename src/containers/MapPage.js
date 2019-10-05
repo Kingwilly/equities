@@ -19,7 +19,7 @@ class MapPage extends React.Component {
       "60b882d2e141112b676c9446202ad4afb29121fab9b9e62ce5efe5ed01a964cf"
   });
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     var that = this;
     this.client
       .getEntries({
@@ -88,6 +88,7 @@ class MapPage extends React.Component {
     this.setState({ townModal: false });
   }
   returnMapPins() {
+    // eslint-disable-next-line 
     var imagePhotos = [];
     return this.state.entries.map(entry => {
       if (entry.fields.imageCarasoul) {
@@ -99,6 +100,7 @@ class MapPage extends React.Component {
           );
         }
       } else {
+        // eslint-disable-next-line 
         var imageCarasoul = null;
       }
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "antd";
-import Arrow_Button from "../../assets/images/scroll_down_arrow.svg";
 
 class BackAndForth extends Component {
   renderPreviousPost() {
@@ -11,7 +10,7 @@ class BackAndForth extends Component {
     var found = false;
     this.props.entries.map(function(post) {
       totalPosts += 1;
-      if (post.sys.id == currentPostID) {
+      if (post.sys.id === currentPostID) {
         found = true;
       }
       if (!found) {
@@ -27,7 +26,7 @@ class BackAndForth extends Component {
     return (
       <Link
         to={
-          "/our-journal/" + previousPost.sys.id + "/" + previousPost.fields.slug
+          "/press/" + previousPost.sys.id + "/" + previousPost.fields.slug
         }
       >
           <div className="p-3 m-5">
@@ -48,7 +47,7 @@ class BackAndForth extends Component {
     var found = false;
     this.props.entries.map(function(post) {
       totalPosts += 1;
-      if (post.sys.id == currentPostID) {
+      if (post.sys.id === currentPostID) {
         found = true;
       }
       if (!found) {
@@ -64,7 +63,7 @@ class BackAndForth extends Component {
     return (
       <Link
         to={
-          "/our-journal/" + nextPost.sys.id + "/" + nextPost.fields.slug
+          "/press/" + nextPost.sys.id + "/" + nextPost.fields.slug
         }
       >
           <div className="p-3 m-5">

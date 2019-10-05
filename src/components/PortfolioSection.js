@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import PeapackGladstoneMap from "../assets/images/maps/Gladstone-intro-2.jpg";
 import FarHillsMap from "../assets/images/maps/Farhills-intro-2.jpg";
 import BernardsvilleMap from "../assets/images/maps/Bernardsville-intro-2.jpg";
+// eslint-disable-next-line 
 import MendhamMap from "../assets/images/maps/mendham-intro.jpg";
 import windowSize from "react-window-size";
 

@@ -101,9 +101,9 @@ class App extends React.Component {
                                             <InvestorLogin {...props}  />
                                         )}
                                     />
-                                    <Route exact path="/our-journal" component={BlogHome} />
+                                    <Route exact path="/press" component={BlogHome} />
                                     <Route
-                                        path="/our-journal/:id/:title"
+                                        path="/press/:id/:title"
                                         component={BlogDetail}
                                     />
                                 </AnimatedSwitch>

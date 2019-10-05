@@ -7,6 +7,7 @@ const Panel = Collapse.Panel;
 var contentful = require("contentful");
 var showdown = require("showdown");
 var moment = require('moment');
+// eslint-disable-next-line 
 const { Link } = Anchor;
 
 
