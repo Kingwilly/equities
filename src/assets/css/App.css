@@ -645,6 +645,11 @@ line-height: inherit;
     padding: 20px;
     padding-top: 22.5px;
   }
+
+  .post-title {
+    font-size: 30px;
+    line-height: 30px;
+    }
 }
 
 .hero-callout-block-outer {
@@ -1720,6 +1725,11 @@ svg {
   .home-hero-title {
     font-size: 75px;
   }
+
+  .post-title {
+    font-size: 30px;
+    line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -5664,3 +5674,5 @@ svg {
   color: #434148;
   letter-spacing: 3px;
 }
+
+a { text-decoration: none!important; }
