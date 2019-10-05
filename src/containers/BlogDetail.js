@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import DocumentTitle from "react-document-title";
 import { Row, Col, Anchor, Collapse } from 'antd';
-import Press from "../assets/images/press-main-image.jpg";
-import HeroImage from '../components/HeroImage';
-import { HashLink } from 'react-router-hash-link';
 import BackAndForth from "../components/Blog/BackAndForth";
-
+// eslint-disable-next-line
 const Panel = Collapse.Panel;
 var contentful = require("contentful");
 var showdown = require("showdown");
@@ -24,7 +21,7 @@ class BlogDetail extends Component {
     accessToken:
       "60b882d2e141112b676c9446202ad4afb29121fab9b9e62ce5efe5ed01a964cf"
   });
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     var that = this;
     this.client
       .getEntries({
@@ -76,7 +73,7 @@ class BlogDetail extends Component {
           <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
             <div id="blog1" className="post p-5 mt-5 text-center mx-auto">
               <h5 className="post-title"><b>{ this.state.post.fields.title.toUpperCase()}</b></h5>
-              <h3 className="section-header-blue my-5">{moment(this.state.post.fields.publishDate).format('MMMM DD, Y')}</h3>
+              <h3 className="section-header-blue date my-5">{moment(this.state.post.fields.publishDate).format('MMMM DD, Y')}</h3>
               <div className="description my-5 text-left">
                     <div
                       dangerouslySetInnerHTML={{

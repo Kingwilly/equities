@@ -647,8 +647,8 @@ line-height: inherit;
   }
 
   .post-title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 30px !important;
+    line-height: 30px !important;
     }
 }
 
@@ -1727,8 +1727,8 @@ svg {
   }
 
   .post-title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 30px !important;
+    line-height: 30px !important;
     }
 }
 

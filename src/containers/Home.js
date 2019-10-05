@@ -1,12 +1,13 @@
 import React from 'react'
+// eslint-disable-next-line
 import { Row, Col } from 'antd'
 import { Element } from 'react-scroll'
 import { NavLink } from 'react-router-dom'
-
 import PortfolioSection from '../components/PortfolioSection'
 import HomeHeroImage from '../components/HomeHeroImage'
 import HeroImage from '../components/HeroImage'
 import FirmIntro from '../assets/images/our-firm.png'
+// eslint-disable-next-line
 import LeadershipIntro from '../assets/images/lion.jpg'
 import StrategyBackground from '../assets/images/strategy.png'
 
