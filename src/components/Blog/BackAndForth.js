@@ -36,7 +36,7 @@ class BackAndForth extends Component {
               <span className="arrow-after"></span>
             </span>
             <br />
-            <h3 className="float-left mr-auto articles-footer">PREVIOUS ARTICLE</h3>
+            <h3 className="float-left mr-auto articles-footer">PREVIOUS</h3>
           </div>
       </Link>
     );
@@ -73,7 +73,7 @@ class BackAndForth extends Component {
               <span className="arrow-after"></span>
             </span>
             <br />
-            <h3 className="float-right ml-auto articles-footer">{nextPost.fields.title.toUpperCase()}</h3>
+            <h3 className="float-right ml-auto articles-footer">NEXT</h3>
         </div>
       </Link>
     );
@@ -86,23 +86,23 @@ class BackAndForth extends Component {
       <div className="next-prev-article">
         <Row>
 					<Col
-						className="portfolio-block portfolio-text-block portfolio-block-left float-left mr-auto"
+						className="portfolio-block portfolio-text-block portfolio-block-left float-left mr-auto col-4"
 						xs={24}
 						md={8}>
-              <div className="portfolio-block-outer">
+            <div className="portfolio-block-outer">
 							<div className="footer-left">
-              <h3 className="portfolio-callout left">{this.renderPreviousPost()}</h3>
-            </div>
+                <h3 className="portfolio-callout left">{this.renderPreviousPost()}</h3>
+              </div>
             </div>
           </Col>
           <Col
-						className="portfolio-block portfolio-text-block portfolio-block-right float-right ml-auto"
+						className="portfolio-block portfolio-text-block portfolio-block-right float-right ml-auto col-4"
 						xs={24}
 						md={8}>
-              <div className="portfolio-block-outer">
+            <div className="portfolio-block-outer">
 							<div className="footer-right">
-              <h3 className="portfolio-callout right">{this.renderNextPost()}</h3>
-            </div>
+                <h3 className="portfolio-callout right">{this.renderNextPost()}</h3>
+              </div>
             </div>
           </Col>
         </Row>

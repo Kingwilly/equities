@@ -84,6 +84,37 @@ class BlogHome extends Component {
       return <BlogPostPreview post={post} key={post.sys.id} />;
     });
   }
+  renderPress() {
+    return this.state.entries.map(entry => 
+
+      <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
+        <div id={entry.fields.title} className="post p-5 pt-0 text-center ml-auto mr-auto">
+          <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
+          <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
+          <p>{entry.fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
+          <HashLink
+              to={
+              "/our-journal/" +
+            entry.sys.id +
+            "/" +
+            entry.fields.slug
+            }
+          >
+          <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
+          </HashLink>
+        </div>
+      </Col>
+      );
+  }
+
+  renderNavigation() {
+
+    return this.state.entries.map(entry => 
+      
+      <Link href={'#' + entry.fields.title} title={entry.fields.title.toUpperCase()} />
+      )
+  }
+  
   render() {
 
 
@@ -91,87 +122,27 @@ class BlogHome extends Component {
       return (
         <div>
           <DocumentTitle title={"Blog | Melillo Equities"}>
-          <div>
-          <HeroImage
-                height={100}
-                background={Press}
-                bottomHeader={'PRESS'} />
-              
-          <Row className="gutter-row" id="a1" gutter={45} >
-          <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-            <div id="blog1" className="post p-5 pt-0 text-center ml-auto mr-auto">
-              <h3 className="section-header-blue">{moment(this.state.entries[0].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title my-5"><b>{ this.state.entries[0].fields.title.toUpperCase()}</b></h5>
-              <p>{this.state.entries[0].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
-              <HashLink
-                  to={
-                  "/our-journal/" +
-                 this.state.entries[0].sys.id +
-                "/" +
-                this.state.entries[0].fields.slug
-                }
-              >
-              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
-              </HashLink>
+            <div>
+              <HeroImage
+                    className="hero-bottom-header" 
+                    height={100}
+                    background={Press}
+                    bottomHeader={'PRESS'} />
+                  
+              <Row className="gutter-row" id="a3" gutter={45} style={{paddingTop: 30}}>
+                <Col
+                  md={{ span: 4 }}
+                  style={{ zIndex: 9999, paddingTop: 30 }}
+                  className="anchor-menu float-right ml-auto">
+                  <Anchor affix={true} offsetTop={223} showInkInFixed={true}>
+                    {this.renderNavigation()}
+                  </Anchor>
+                </Col>
+
+                {this.renderPress()}
+              </Row>
             </div>
-              </Col>
-              <Col
-                md={{ span: 4 }}
-                style={{ zIndex: 9999, paddingTop: 30 }}
-                className="anchor-menu">
-						    <Anchor affix={true} offsetTop={223} showInkInFixed={true}>
-                  <Link href="#blog1" title={this.state.entries[0].fields.title.toUpperCase()} />
-                  <Link href="#blog2" title={this.state.entries[1].fields.title.toUpperCase()} />
-                  <Link href="#blog3" title={this.state.entries[2].fields.title.toUpperCase()} />
-                </Anchor>
-              </Col>
-            </Row>
-            <Row className="gutter-row" id="a2" gutter={45} style={{paddingTop: 30}}>
-              <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-
-            <div id="blog2" className="post p-5 text-center ml-auto mr-auto">
-              <h3 className="section-header-blue">{moment(this.state.entries[1].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title my-5"><b>{ this.state.entries[1].fields.title.toUpperCase()}</b></h5>
-              <p>{this.state.entries[1].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
-              <HashLink
-                  to={
-                  "/our-journal/" +
-                 this.state.entries[1].sys.id +
-                "/" +
-                this.state.entries[1].fields.slug
-                }
-              >
-              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
-              </HashLink>            
-              </div>
-            </Col>
-          </Row>
-          <Row className="gutter-row" id="a3" gutter={45} style={{paddingTop: 30}}>
-          <Col className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-            <div id="blog3" className="post p-5 text-center ml-auto mr-auto">
-              <h3 className="section-header-blue">{moment(this.state.entries[2].fields.publishDate).format('MMMM DD, Y')}</h3>
-              <h5 className="post-title my-5"><b>{ this.state.entries[2].fields.title.toUpperCase()}</b></h5>
-              <p>{this.state.entries[2].fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
-              <HashLink
-                  to={
-                  "/our-journal/" +
-                 this.state.entries[2].sys.id +
-                "/" +
-                this.state.entries[2].fields.slug
-                }
-              >
-              <button className="read-more btn btn-lg py-3 px-5 mt-3"><i>read more</i></button>
-              </HashLink>            
-              </div>
-              </Col>
-            </Row>
-
-          </div>
-          
-        </DocumentTitle>
-
-
-
+          </DocumentTitle>
       </div>
       );
     } else {

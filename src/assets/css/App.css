@@ -5620,8 +5620,8 @@ svg {
   font-family: proxima-nova-black, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 3vw;
-  line-height: 3vw;
+  font-size: 40px;
+  line-height: 40px;
   /* 185px; */
   opacity: 0.9;
   text-align: center;
@@ -5629,14 +5629,9 @@ svg {
 
 .post {
 
-  border-bottom: #a3a098 1px solid;
+  border-bottom: #bbbbbb 1px solid;
 }
 
-.readmore {
-
-  border-radius: 0px;
-  padding: 16px;
-}
 
 .articles-footer {
 
@@ -5648,10 +5643,24 @@ svg {
 }
 
 .read-more {
-
+  padding: 16px;
   border-radius: 0px !important;
-  border: #a3a098 1px solid !important;
-  color: #000 !important;
-  font-size: 1vw !important;
+  border: #bbbbbb 1px solid !important;
+  color: #434148 !important;
+  font-size: 16px !important;
   font-weight: bold;
+}
+
+.hero-bottom-header {
+
+  line-height: inherit;
+  bottom: 0;
+  position: relative;
+}
+
+.date {
+
+  text-transform: uppercase;
+  color: #434148;
+  letter-spacing: 3px;
 }
