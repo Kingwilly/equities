@@ -172,15 +172,15 @@ class Navigation extends React.Component {
 								<NavLink to="/portfolio/mendham">Mendham</NavLink>
 							</Menu.Item> */}
                         </SubMenu>
-                        <Menu.Item key="/login">
-                            <a href={INVESTOR_LOGIN_URL} target="_blank">
-                                <span>INVESTOR LOGIN</span>
-                            </a>
-                        </Menu.Item>
                         <Menu.Item key="/press">
                             <NavLink to="/press">
                                 <span>PRESS</span>
                             </NavLink>
+                        </Menu.Item>
+                        <Menu.Item key="/login">
+                            <a href={INVESTOR_LOGIN_URL} target="_blank">
+                                <span>INVESTOR LOGIN</span>
+                            </a>
                         </Menu.Item>
                         <Menu.Item
                             key="/contact"

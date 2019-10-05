@@ -121,7 +121,7 @@ class BlogHome extends Component {
     if (this.state.entries) {
       return (
         <div>
-          <DocumentTitle title={"PRESS | Melillo Equities"}>
+          <DocumentTitle title={"Press | Melillo Equities"}>
             <div>
               <HeroImage
                     className="hero-bottom-header" 
