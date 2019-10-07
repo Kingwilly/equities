@@ -5659,6 +5659,7 @@ svg {
   color: #434148 !important;
   font-size: 16px !important;
   font-weight: bold;
+  
 }
 
 .hero-bottom-header {
@@ -5682,4 +5683,10 @@ a { text-decoration: none!important; }
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  }
+}
+
+.footer-icon {
+
+  max-height: 24px;
+}
+
