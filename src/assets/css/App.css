@@ -5676,3 +5676,10 @@ svg {
 }
 
 a { text-decoration: none!important; }
+
+.description ul li {
+  font-family: Open Sans,sans-serif!important;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  }
