@@ -4,7 +4,7 @@ import { Row, Col, Anchor, Collapse } from 'antd';
 import Press from "../assets/images/press-main-image.jpg";
 import HeroImage from '../components/HeroImage';
 import { HashLink } from 'react-router-hash-link';
-import Instagram from "../assets/images/icon-instagram.svg";
+import Instagram from "../assets/images/ig-color-icon.png";
 
 // eslint-disable-next-line 
 const Panel = Collapse.Panel;
@@ -131,20 +131,34 @@ class BlogHome extends Component {
                     height={100}
                     background={Press}
                     bottomHeader={'PRESS'} />
-                  
-              <Row className="gutter-row" id="a3" gutter={45} style={{paddingTop: 30}}>
-                <Col
+                    
+                    <Row className="gutter-row" gutter={45} style={{paddingTop: 30}}>
+              <Col
                   md={{ span: 4 }}
-                  style={{ zIndex: 9999, paddingTop: 30 }}
+                  style={{ zIndex: 9999}}
                   className="anchor-menu float-right ml-auto">
-                  <Anchor affix={true} offsetTop={223} showInkInFixed={true}>
+
+                  
+
+                    </Col>
+                    </Row>
+              <Row className="gutter-row" id="a3" gutter={45}>
+              <Col
+                  md={{ span: 4 }}
+                  style={{ zIndex: 9999, paddingTop: 30  }}
+                  className="anchor-menu float-right ml-auto">
+
+                  <Anchor affix={true} offsetTop={223} showInkInFixed={true} style={{border: 'none'}}>
+                    <a className="follow-us btn float-right ml-auto px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                    <span className="float-right ml-auto m-0"><span className="mt-5 mr-2">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
+                  </Anchor>
+
+                  <Anchor affix={true} offsetTop={223} showInkInFixed={true} style={{marginTop: 50 }}>
+                    
                     {this.renderNavigation()}
                   </Anchor>
                 </Col>
-                <Col className="text-center" xs={24} md={{ span: 16, offset: 4 }}>
-                  <a className="read-more btn btn-lg py-3 mt-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
-                    Follow us on Instagram<span className="float-right ml-auto pl-3"><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
-                </Col>
+
 
                 {this.renderPress()}
               </Row>

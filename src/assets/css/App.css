@@ -5662,7 +5662,7 @@ svg {
   font-size: 14px;
 }
 
-.read-more {
+/*.read-more {
   padding: 16px;
   border-radius: 0px !important;
   border: #bbbbbb 1px solid !important;
@@ -5670,7 +5670,23 @@ svg {
   font-size: 16px !important;
   font-weight: bold;
   
-}
+}*/
+
+.read-more {
+  border: 1px solid #da4165!important;
+  color: #da4165!important;
+  font-family: kepler-std-display;
+  font-size: 16px!important;
+  font-weight: light;
+  }
+
+  .follow-us {
+    border: 1px solid #da4165!important;
+    color: #da4165!important;
+    font-family: kepler-std-display;
+    font-size: 16px!important;
+    font-weight: light;
+    }
 
 .hero-bottom-header {
 
