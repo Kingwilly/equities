@@ -41,9 +41,9 @@ class CallOut extends React.Component {
 								BEDMINSTER, NJ <br className="visible-mobile" />
 								1+908 234 9561
 							</p>
-							<div className="footer-text text-center col-4 mx-auto">
-								<a className="float-left mr-auto" href="https://www.linkedin.com/company/melillo-equities/" target="_blank" rel="noopener noreferrer"><img className="footer-icon img-fluid" src={Linkedin} alt="Linkedin" /></a>
-								<a className="float-right ml-auto" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer"><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></a>
+							<div className="text-center mx-auto py-3">
+								<a className="footer-icon mx-3" href="https://www.linkedin.com/company/melillo-equities/" target="_blank" rel="noopener noreferrer"><img className="footer-icon" src={Linkedin} alt="Linkedin" /></a>
+								<a className="footer-icon mx-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer"><img className="footer-icon" src={Instagram} alt="Instagram" /></a>
 								<br /><br />
 							</div>
 						</div>

@@ -5697,6 +5697,10 @@ a { text-decoration: none!important; }
 
 .footer-icon {
 
-  height: 32px !important;
+  height: 100%;
+  max-height: 32px !important;
+  max-width: 32px !important;
+  width: 100%;
+  display: inline-block;
 }
 
