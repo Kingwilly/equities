@@ -651,10 +651,10 @@ line-height: inherit;
     line-height: 30px !important;
     }
 
-  .arrow {
+    .arrow-hide {
 
-    display: none;
-  }
+      display: none
+    }
 }
 
 .hero-callout-block-outer {
@@ -1736,9 +1736,9 @@ svg {
     line-height: 30px !important;
     }
 
-    .arrow {
+    .arrow-hide {
 
-      display: none;
+      display: none
     }
 }
 
@@ -5697,6 +5697,6 @@ a { text-decoration: none!important; }
 
 .footer-icon {
 
-  max-height: 24px;
+  height: 32px !important;
 }
 

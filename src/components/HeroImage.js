@@ -55,7 +55,7 @@ export const HeroImage = props => {
                 {props.linkText}
                 <NavLink to={url}>
                   <div className={`home-hero-arrow ${textPosition} ${arrow}`}>
-                    <span className={`arrow ${width}`}>
+                    <span className={`arrow ${width}  arrow-hide`}>
                       <span
                         className="arrow-before"
                         style={{ backgroundColor: "white" }}

@@ -45,7 +45,7 @@ class PortfolioSection extends React.Component {
                                 >
                                     <NavLink to="/portfolio/peapack-gladstone">
                                         <div className="home-hero-arrow home-hero-arrow-center arrow-left">
-                                            <span className="arrow">
+                                            <span className="arrow arrow-hide">
                                                 <span className="arrow-before" />
                                                 <span className="arrow-after" />
                                             </span>
@@ -91,7 +91,7 @@ class PortfolioSection extends React.Component {
                                 >
                                     <NavLink to="/portfolio/farhills">
                                         <div className="home-hero-arrow home-hero-arrow-center">
-                                            <span className="arrow">
+                                            <span className="arrow arrow-hide">
                                                 <span className="arrow-before" />
                                                 <span className="arrow-after" />
                                             </span>
@@ -150,7 +150,7 @@ class PortfolioSection extends React.Component {
                                 >
                                     <NavLink to="/portfolio/bernardsville">
                                         <div className="home-hero-arrow home-hero-arrow-center arrow-left">
-                                            <span className="arrow">
+                                            <span className="arrow arrow-hide">
                                                 <span className="arrow-before" />
                                                 <span className="arrow-after" />
                                             </span>
