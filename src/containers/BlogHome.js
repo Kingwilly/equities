@@ -142,7 +142,7 @@ class BlogHome extends Component {
                   </Anchor>
                 </Col>
                 <Col className="text-center" xs={24} md={{ span: 16, offset: 4 }}>
-                  <a className="call-action read-more btn btn-lg py-3 mt-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                  <a className="read-more btn btn-lg py-3 mt-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
                     Follow us on Instagram<span className="float-right ml-auto pl-3"><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
                 </Col>
 

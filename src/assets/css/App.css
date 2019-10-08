@@ -650,6 +650,11 @@ line-height: inherit;
     font-size: 30px !important;
     line-height: 30px !important;
     }
+
+  .arrow {
+
+    display: none;
+  }
 }
 
 .hero-callout-block-outer {
@@ -1729,6 +1734,11 @@ svg {
   .post-title {
     font-size: 30px !important;
     line-height: 30px !important;
+    }
+
+    .arrow {
+
+      display: none;
     }
 }
 
