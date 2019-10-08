@@ -158,8 +158,14 @@ class BlogHome extends Component {
                     {this.renderNavigation()}
                   </Anchor>
                 </Col>
+                <Col xs={24} md={{ span: 16, offset: 4 }}>
 
+                <div className="follow-mobile text-center ml-auto mr-auto">
 
+                    <a className="follow-us btn px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                    <span className="float-right ml-auto m-0"><span className="mt-5 mr-2">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
+                </div>
+                </Col>
                 {this.renderPress()}
               </Row>
             </div>
