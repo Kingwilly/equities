@@ -5687,7 +5687,18 @@ svg {
     font-family: kepler-std-display;
     font-size: 16px!important;
     font-weight: light;
-    
+    padding: 0px 16px;
+    padding-top: 6px;
+    width: 202px;
+  }
+
+  .follow-text {
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-65%, 50%) 
   }
 
   .follow-mobile {
@@ -5726,3 +5737,11 @@ a { text-decoration: none!important; }
   display: inline-block;
 }
 
+.description ul li {
+  color: #434148;
+  }
+
+.description p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
