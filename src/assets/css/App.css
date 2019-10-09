@@ -5756,6 +5756,7 @@ svg {
   text-transform: uppercase;
   color: #434148;
   letter-spacing: 3px;
+  font-size: 18px;
 }
 
 a { text-decoration: none!important; }
@@ -5785,4 +5786,4 @@ a { text-decoration: none!important; }
   margin-bottom: 20px;
 }
 
-.description ul {margin-bottom: 1rem;}
+.description ul {font-size: 18px;}
