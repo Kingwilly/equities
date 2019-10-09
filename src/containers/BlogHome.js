@@ -91,7 +91,7 @@ class BlogHome extends Component {
     return this.state.entries.map(entry => 
 
       <Col key={entry.fields.publishDate} className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-        <div id={entry.fields.title} className="post p-5 pt-0 text-center ml-auto mr-auto">
+        <div id={entry.fields.title} className="post p-5 pt-0 text-center mx-auto">
           <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
           <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
           <p>{entry.fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
@@ -142,32 +142,30 @@ class BlogHome extends Component {
 
                       </Col>
                     </Row>
-                    <Row className="gutter-row" id="a3" gutter={45}>
-                      <Col
-                          md={{ span: 4 }}
-                          style={{ zIndex: 9999 }}
-                          className="anchor-menu float-right ml-auto">
 
-                        <a className="follow-us btn float-right ml-auto px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
-                        <span className="float-right ml-auto m-0"><span className="follow-text">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
-                      </Col>
-                  </Row>
                   <Row className="gutter-row" id="a3" gutter={45}>
 
                   <Col
                   md={{ span: 4 }}
                   style={{ zIndex: 9999 }}
                   className="anchor-menu float-right ml-auto">
+
+                  <Anchor affix={false} style={{border: 'none'}}>
+                    <a className="btn follow-us px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                    <span className="float-right ml-auto m-0"><span className="follow-text">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
+                  </Anchor>
+                  
                   <Anchor affix={true} offsetTop={223} showInkInFixed={true} style={{marginTop: 60}}>
                     
                     {this.renderNavigation()}
                   </Anchor>
                 </Col>
-                <Col xs={24} md={{ span: 16, offset: 4 }}>
+                
+                <Col xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 60}}>
 
-                <div className="follow-mobile text-center ml-auto mr-auto">
+                <div className="mobile-hide text-center mx-auto">
 
-                    <a className="follow-us btn px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                    <a className="follow-mobile btn px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
                     <span className="float-right ml-auto m-0 pt-2"><span className="follow-text pt-1">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
                 </div>
                 </Col>
