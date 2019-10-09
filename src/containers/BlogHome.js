@@ -133,26 +133,24 @@ class BlogHome extends Component {
                     bottomHeader={'PRESS'} />
                     
                     <Row className="gutter-row" gutter={45} style={{paddingTop: 30}}>
-              <Col
-                  md={{ span: 4 }}
-                  style={{ zIndex: 9999}}
+                      <Col
+                          md={{ span: 4 }}
+                          style={{ zIndex: 9999}}
                   className="anchor-menu float-right ml-auto">
 
                   
 
-                    </Col>
+                      </Col>
                     </Row>
-              <Row className="gutter-row" id="a3" gutter={45}>
-              <Col
-                  md={{ span: 4 }}
-                  style={{ zIndex: 9999, marginTop: 30  }}
-                  className="anchor-menu float-right ml-auto">
+                    <Row className="gutter-row" id="a3" gutter={45}>
+                      <Col
+                          md={{ span: 4 }}
+                          style={{ zIndex: 9999 }}
+                          className="anchor-menu float-right ml-auto">
 
-                  <Anchor affix={true} offsetTop={223} showInkInFixed={true} style={{border: 'none'}}>
-                    <a className="follow-us btn float-right ml-auto px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
-                    <span className="float-right ml-auto m-0"><span className="follow-text">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
-                  </Anchor>
-                  </Col>
+                        <a className="follow-us btn float-right ml-auto px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                        <span className="float-right ml-auto m-0"><span className="follow-text">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
+                      </Col>
                   </Row>
                   <Row className="gutter-row" id="a3" gutter={45}>
 

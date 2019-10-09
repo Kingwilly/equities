@@ -5687,9 +5687,11 @@ svg {
     font-family: kepler-std-display;
     font-size: 16px!important;
     font-weight: light;
-    padding: 0px 16px;
-    padding-top: 6px;
-    width: 202px;
+    padding: 0px 16px !important;
+    padding-top: 8px !important;
+    width: 100%;
+    max-width: 215px;
+    position: absolute;
   }
 
   .follow-text {
@@ -5741,7 +5743,9 @@ a { text-decoration: none!important; }
   color: #434148;
   }
 
-.description p {
+  .description p {
     margin-top: 0;
-    margin-bottom: 1rem;
-  }
+    margin-bottom: 20px;
+    }
+
+.description ul {margin-bottom: 1rem;}
