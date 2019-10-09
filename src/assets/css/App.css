@@ -668,14 +668,14 @@ line-height: inherit;
       font-size: 16px!important;
       font-weight: light;
       padding: 0px 16px !important;
-      padding-top: 8px !important;
+      padding-top: 4px !important;
       width: 100%;
       max-width: 215px;
       position: absolute;
       top: 0;
       left: 50%;
       margin-right: -50%;
-      transform: translate(-50%, 0%);
+      transform: translate(-50%, 10%);
     }
 }
 
@@ -1775,7 +1775,7 @@ svg {
         font-size: 16px!important;
         font-weight: light;
         padding: 0px 16px !important;
-        padding-top: 8px !important;
+        padding-top: 4px !important;
         width: 100%;
         max-width: 215px;
         position: absolute;
