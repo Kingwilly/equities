@@ -132,22 +132,13 @@ class BlogHome extends Component {
                     background={Press}
                     bottomHeader={'PRESS'} />
                     
-                    <Row className="gutter-row" gutter={45} style={{paddingTop: 30}}>
-                      <Col
-                          md={{ span: 4 }}
-                          style={{ zIndex: 9999}}
-                  className="anchor-menu float-right ml-auto">
 
-                  
-
-                      </Col>
-                    </Row>
 
                   <Row className="gutter-row" id="a3" gutter={45}>
 
                   <Col
                   md={{ span: 4 }}
-                  style={{ zIndex: 9999 }}
+                  style={{ zIndex: 9999, paddingTop: 30 }}
                   className="anchor-menu float-right ml-auto">
 
                   <Anchor affix={false} style={{border: 'none'}}>
