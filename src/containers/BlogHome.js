@@ -157,7 +157,7 @@ class BlogHome extends Component {
                 <div className="mobile-hide text-center mx-auto">
 
                     <a className="follow-mobile btn px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
-                    <span className="float-right ml-auto m-0 pt-2"><span className="follow-text pt-1">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
+                    <span className="float-right ml-auto m-0 pt-2"><span className="follow-mobile-text pt-1">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
                 </div>
                 </Col>
                 {this.renderPress()}

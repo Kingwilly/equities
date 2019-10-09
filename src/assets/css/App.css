@@ -677,6 +677,15 @@ line-height: inherit;
       margin-right: -50%;
       transform: translate(-50%, 10%);
     }
+
+    .follow-mobile-text {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-65%, 40%) 
+    }
 }
 
 .hero-callout-block-outer {
@@ -1783,6 +1792,15 @@ svg {
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 40%);
+    }
+
+    .follow-mobile-text {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-65%, 40%) 
     }
 }
 
