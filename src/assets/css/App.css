@@ -5805,3 +5805,12 @@ a { text-decoration: none!important; }
 }
 
 .description ul {font-size: 18px;}
+
+.description ul {
+  margin-bottom: 20px;
+  }
+  
+  
+  .description {
+  display: flex;
+  }

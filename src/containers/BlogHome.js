@@ -13,6 +13,7 @@ var showdown = require("showdown");
 var moment = require('moment');
 const { Link } = Anchor;
 
+//.split(" ").splice(0, 50).join(" ") + "..."
 
 class BlogPostPreview extends Component {
   converter = new showdown.Converter();
@@ -38,7 +39,7 @@ class BlogPostPreview extends Component {
                 <div
                   dangerouslySetInnerHTML={{
                     __html: this.converter.makeHtml(
-                      this.state.entries[0].fields.content.split(" ").splice(0, 50).join(" ") + " ..."
+                      this.state.entries[0].fields.summary
                     )
                   }}
                 />
@@ -94,7 +95,7 @@ class BlogHome extends Component {
         <div id={entry.fields.title} className="post p-5 pt-0 text-center mx-auto">
           <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
           <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
-          <p>{entry.fields.content.split(" ").splice(0, 50).join(" ") + "..."}</p>
+          <p>{entry.fields.summary}</p>
           <HashLink
               to={
               "/press/" +
