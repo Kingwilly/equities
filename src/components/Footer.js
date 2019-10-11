@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import MellioEquitiesLargeLogo from '../assets/images/footer-logo.svg'
 import { Link } from 'react-router-dom'
-import Instagram from "../assets/images/icon-instagram.svg";
+import Instagram from "../assets/images/ig-color-icon.png";
 import Linkedin from "../assets/images/icon-linkedin.svg";
 
 const INVESTOR_LOGIN_URL = "https://investors.melilloequities.com/login";
