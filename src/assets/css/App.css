@@ -1104,6 +1104,7 @@ svg {
   padding-left: 50px;
   padding-reft: 50px;
   margin-top: 150px;
+  
 }
 
 .contact-sub-header {
@@ -1117,6 +1118,14 @@ svg {
   font-size: 1.9vw;
   font-family: kepler-std-display;
   color: #fff;
+  
+}
+
+.contact-sub-email {
+  font-size: 1.9vw;
+  font-family: kepler-std-display;
+  color: #fff;
+  padding-bottom: 300px;
 }
 
 .map-overlay {

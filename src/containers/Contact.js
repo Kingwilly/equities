@@ -15,7 +15,7 @@ class Contact extends React.Component {
                 <div
                     style={{
                         background: `url(${ContactBackgroundLocation})`,
-                        height: 90 + "vh",
+                        height: 110 + "vh",
                         width: 100 + "%",
                         backgroundOrigin: "center",
                         backgroundSize: "cover"
