@@ -115,7 +115,7 @@ class BlogHome extends Component {
 
     return this.state.entries.map(entry => 
       
-      <Link key={entry.fields.title} href={'#' + entry.fields.title} title={entry.fields.title.toUpperCase()} />
+      <Link key={entry.fields.title} href={'#' + entry.fields.title} title={moment(entry.fields.publishDate).format('MMMM DD, Y')} />
       )
   }
   
