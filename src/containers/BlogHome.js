@@ -92,7 +92,7 @@ class BlogHome extends Component {
     return this.state.entries.map(entry => 
 
       <Col key={entry.fields.publishDate} className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-        <div id={entry.fields.title} className="post p-5 pt-0 text-center mx-auto">
+        <div id={entry.fields.title} className="post pt-0 text-center mx-auto">
           <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
           <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
           <p>{entry.fields.summary}</p>
@@ -155,9 +155,9 @@ class BlogHome extends Component {
                 
                 <Col xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 60}}>
 
-                <div className="mobile-hide text-center mx-auto">
+                <div className="mobile-hide text-center mx-auto mb-5">
 
-                    <a className="follow-mobile btn px-3" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
+                    <a className="follow-mobile btn px-3 m" href="https://www.instagram.com/melilloequities/" target="_blank" rel="noopener noreferrer">
                     <span className="float-right ml-auto m-0 pt-2"><span className="follow-mobile-text pt-1">Follow us on Instagram </span><img className="footer-icon img-fluid" src={Instagram} alt="Instagram" /></span></a>
                 </div>
                 </Col>
