@@ -5810,20 +5810,20 @@ a { text-decoration: none!important; }
 
 .description ul {
   margin-bottom: 20px;
-  }
+}
   
   
-  .description {
+.description {
   display: flex;
-  }
+}
 
-@media screen and (min-width: 992px) {
-    .padding-left-right-20 {
-    padding-left:20px !important;
-    padding-right: 20px !important;
+@media (min-width: 992px) {
+  .padding-left-right-20 {
+    padding-left:20px!important;
+    padding-right: 20px!important;
   }
 }
-    
+  
 .padding-left-right-20 {
   padding-left:0px;
   padding-right: 0px;

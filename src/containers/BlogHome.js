@@ -124,7 +124,7 @@ class BlogHome extends Component {
 
     if (this.state.entries) {
       return (
-        <div className="padding-left-right-20">
+        <div>
           <DocumentTitle title={"Press | Melillo Equities"}>
             <div>
               <HeroImage
