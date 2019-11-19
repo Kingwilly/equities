@@ -92,7 +92,7 @@ class BlogHome extends Component {
     return this.state.entries.map(entry => 
 
       <Col key={entry.fields.publishDate} className="paragraph-emphasis" xs={24} md={{ span: 16, offset: 4 }} style={{paddingBottom: 30}}>
-        <div id={entry.fields.title} className="post pt-0 text-center mx-auto">
+        <div id={entry.fields.title} className="post pb-5 text-center mx-auto">
           <h3 className="section-header-blue date">{moment(entry.fields.publishDate).format('MMMM DD, Y')}</h3>
           <h5 className="post-title my-4"><b>{entry.fields.title.toUpperCase()}</b></h5>
           <p>{entry.fields.summary}</p>
