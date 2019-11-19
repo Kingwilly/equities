@@ -39,7 +39,7 @@ class CallOut extends React.Component {
 							<p className="footer-text">
 								350 MAIN STREET, SUITE 8,<br className="visible-mobile" />{' '}
 								BEDMINSTER, NJ <br className="visible-mobile" />
-								1+908 234 9561
+								<div>1+908 234 9561</div>
 							</p>
 							<div className="text-center mx-auto py-3">
 								<a className="footer-icon mx-3" href="https://www.linkedin.com/company/melillo-equities/" target="_blank" rel="noopener noreferrer"><img className="footer-icon" src={Linkedin} alt="Linkedin" /></a>
