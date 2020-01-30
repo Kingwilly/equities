@@ -5828,3 +5828,8 @@ a { text-decoration: none!important; }
   padding-left:0px;
   padding-right: 0px;
 }
+
+sup {
+    top: -4.5em!important;
+    font-size: 12%!important;
+}
