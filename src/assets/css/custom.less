@@ -1,0 +1,287 @@
+.hero {
+  h1 {
+    margin-top: 48px;
+    color: #1d4a63;
+    font-size: 8vw;
+    font-family: proxima-nova-black, sans-serif;
+    line-height: inherit;
+    bottom: 0;
+    position: relative;
+  }
+  h2 {
+    margin-top: 64px;
+    color: #1d4a63;
+    font-size: 4.5vw;
+    font-family: proxima-nova-black, sans-serif;
+    line-height: inherit;
+    bottom: 0;
+    position: relative;
+  }
+}
+
+@news: news;
+
+.@{news}-wrapper {
+  min-height: 720px;
+  .@{news} {
+    > p {
+      text-align: center;
+    }
+    &-project {
+      &-title {
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+      &-name {
+        font-size: 28px;
+        color: #1d4a63;
+        font-family: proxima-nova-black, sans-serif;
+        line-height: 28px;
+        float: left;
+        margin-right: auto;
+        margin-bottom: 4px;
+        text-align: left;
+      }
+      &-day {
+        font-family: proxima-nova-black, sans-serif;
+        line-height: inherit;
+        top: 8px;
+        left: 18px;
+        position: absolute;
+        z-index: 10;
+        font-size: 40px;
+        color: #ffffff;
+      }
+      &-month {
+        text-transform: uppercase;
+        font-family: proxima-nova-semibold, sans-serif;
+        font-size: 11px;
+        color: #ffffff;
+        line-height: inherit;
+        top: 54px;
+        left: 18px;
+        position: absolute;
+        z-index: 10;
+      }
+      &-pday {
+        font-size: 40px;
+        color: #ffffff;
+        font-family: proxima-nova-black, sans-serif;
+        line-height: inherit;
+        top: 8px;
+        left: 18px;
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+      }
+      &-pmonth {
+        text-transform: uppercase;
+        font-family: proxima-nova-semibold, sans-serif;
+        font-size: 11px;
+        color: #ffffff;
+        line-height: inherit;
+        top: 54px;
+        left: 18px;
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+      }
+      &-headline {
+        margin-top: 10px;
+        font-size: 24px;
+        color: #1d4a63;
+        font-family: proxima-nova-black, sans-serif;
+        line-height: 24px !important;
+      }
+      &-summary {
+        font-size: 14px;
+        font-family: open sans;
+        font-weight: 400;
+        margin-top: 10px;
+        display: block;
+      }
+      &-nav {
+        font-family: kepler-std-display !important;
+        text-align: left;
+        position: absolute;
+        color: #1d4a63;
+        a {
+          font-size: 11px;
+          margin-bottom: 3px;
+          font-family: proxima-nova-light;
+          color: #1d4a63;
+        }
+        .location {
+          font-size: 18px;
+          font-weight: 600;
+          color: #1d4a63;
+          letter-spacing: 2px;
+        }
+        .title {
+          font-size: 18px;
+          color: #72736e;
+          letter-spacing: 2px;
+        }
+        .read-more {
+          padding: 16px;
+          border-radius: 0px !important;
+          border: #bbbbbb 1px solid !important;
+          color: #fff !important;
+          font-size: 16px !important;
+          font-weight: bold;
+          width: 100%;
+          font-family: proxima-nova-black,sans-serif;
+          background: #1d4a63;
+        }
+        .ant-anchor-wrapper {
+          border-top: 6px solid #1d4a63;
+        }
+        .news-articles-date {
+          font-size:11px;
+          margin-bottom: 3px;
+          font-family: proxima-nova-black,sans-serif;
+        }
+      }
+      &-description {
+        font-size: 14px;
+        font-family: 'Open Sans';
+        font-weight: 400;
+      }
+      &-status {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #72736e;
+        font-size: 14px;
+        font-family: open sans;
+        font-weight: 700;
+        span {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+    &-img-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+
+      .block {
+        margin-bottom: 24px;
+
+        .news-block-content {
+          border-radius: 4px;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          border: none;
+          & > span {
+            display: block;
+          }
+          & p {
+            line-height: 30px;
+          }
+          &:hover {
+            & p {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@header0: header0;
+
+.@{header0} {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: 0;
+
+  &-logo {
+    position: relative;
+    line-height: 64px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .@{news}-wrapper {
+    overflow: hidden;
+    min-height: 0px;
+
+    .@{news} {
+      &-project {
+        &-nav {
+          position: relative;
+          display: block;
+        }
+        &-title {
+          line-height: 30px;
+          margin-bottom: 10px;
+        }
+      }
+      &-img-wrapper {
+        display: block;
+        justify-content: center;
+        padding: 10px;
+        .block {
+          margin-bottom: 24px;
+          .news-block-content {
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            & > span {
+              width: 100%;
+              display: block;
+              padding: 5%;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          display: block;
+          width: 100%;
+          padding: 2%;
+          span {
+            height: 168px;
+          }
+          p {
+            position: relative;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .hero {
+    h1 {
+      margin-top: 64px;
+    }
+    h2 {
+      font-size: 6vw;
+      margin-top: 64px;
+    }
+  }
+}
+
+.paragraph-emphasis {
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.paragraph-subheading {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
