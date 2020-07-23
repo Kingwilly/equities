@@ -1,5 +1,6 @@
 import React from "react";
-import BernardsvilleMapLocation from "../assets/images/maps/bernardsville-tax-map-8-26-19.jpg";
+import BernardsvilleMapLocation from "../assets/maps/bernadsville/Bernardsville-map-3B-Final.jpg";
+import {ReactComponent as BernardsvilleMapLocationAreas} from '../assets/maps/bernadsville/Bernardsville_Map-3B-svg-Final.svg';
 import MapPage from "./MapPage";
 
 export default class BernardsvilleMap extends React.PureComponent {
@@ -39,6 +40,7 @@ export default class BernardsvilleMap extends React.PureComponent {
       <MapPage
         name="Bernardsville"
         image={BernardsvilleMapLocation}
+        areas={BernardsvilleMapLocationAreas}
         imageAlt="Bernardsville Map"
         heading="Bernardsville"
         townContent={this.townContent}

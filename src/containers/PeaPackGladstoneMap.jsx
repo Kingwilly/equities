@@ -1,10 +1,11 @@
 import React from "react";
-// import PeapackGladstoneMapLocation from "../assets/images/maps/gladstone-tax-map.jpg";
-import PeapackGladstoneMapLocation from "../assets/images/maps/peapack-gladstone-7-19-19.jpg";
+import PeapackGladstoneMapLocation from "../assets/maps/gladstone/Gladstone-tax-map-svg-3B-Final-v2.jpg";
+import { ReactComponent as PeapackGladstoneMapAreas } from '../assets/maps/gladstone/Gladstone-Tax-Map-jschake-2.svg';
 import MapPage from "./MapPage";
 
-export default class PeaPackGladstoneMap extends React.PureComponent {
-  townContent = (
+export default React.memo(function(props) {
+
+  const townContent = (
     <div>
       <p>
         For more than a hundred years since petitioning the state for a charter,
@@ -30,26 +31,27 @@ export default class PeaPackGladstoneMap extends React.PureComponent {
       </p>
     </div>
   );
-  render() {
-    return (
+  
+  return (
       <MapPage
-        name="Peapack"
-        image={PeapackGladstoneMapLocation}
-        imageAlt="Peapack Gladstone Map"
-        heading="Peapack & Gladstone"
-        townContent={this.townContent}
-        population={"2599"}
-        distanceToNYC={"45 Miles"}
-        publicSchool={"Somerset Hills Regional School District"}
-        area={"5.85 sq. mi."}
-        publicTransportation={
+      name="Peapack"
+      image={PeapackGladstoneMapLocation}
+      areas={PeapackGladstoneMapAreas}
+      imageAlt="Peapack Gladstone Map"
+      heading="Peapack & Gladstone"
+      townContent={townContent}
+      population={"2599"}
+      distanceToNYC={"45 Miles"}
+      publicSchool={"Somerset Hills Regional School District"}
+      area={"5.85 sq. mi."}
+      publicTransportation={
           "NJ Transit’s Gladstone Station, NJ Transit’s Peapack Station"
-        }
-        interstateAccess={"n/a"}
-        homeOwnerOccupiedHousingUnits={"76.9%"}
-        perCapitaIncome={"$79,031"}
-        medianHouseholdIncome={"$123,875"}
+      }
+      interstateAccess={"n/a"}
+      homeOwnerOccupiedHousingUnits={"76.9%"}
+      perCapitaIncome={"$79,031"}
+      medianHouseholdIncome={"$123,875"}
       />
-    );
-  }
-}
+  );
+  
+});

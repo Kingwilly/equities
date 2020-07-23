@@ -1,11 +1,12 @@
 import React from "react";
+import { withRouter } from 'react-router-dom';
 import { Modal } from "antd";
 import MapPin from "../components/Portfolio/MapPin";
 import client from '../contentfulClient';
 import Loader from '../components/ui/Loader';
 import DocumentTitle from "react-document-title";
 
-export default class MapPage extends React.Component {
+class MapPage extends React.Component {
   
   state = {
     entries: [],
@@ -25,11 +26,37 @@ export default class MapPage extends React.Component {
         entries.items.forEach((entry) => {
           if (entry.fields.id) {
             openDict[entry.fields.id] = false;
+            this.initAreaHoverAndClick(entry.fields.id, entry);
           }
         });
         this.setState({ openDict: openDict });
       })
       .catch(error => this.setState({ error }));
+  }
+
+  initAreaHoverAndClick(id, entry) {
+    const selector = '#area-'+id;
+    const elem = document.querySelector(selector);
+    if (!elem) return;
+    const offset = elem.getBBox();
+    elem.style.setProperty(
+      'transform-origin',
+      (offset.x + .5 * offset.width) + 'px ' + (offset.y + .5 * offset.height) + 'px'
+    );
+
+    elem.classList.add('hoverable');
+
+    const scaleByPx = 5;
+    const scaleFactor = (offset.width + 2 * scaleByPx) / offset.width;
+    elem.style.setProperty('--map-area-transform', `scale(${scaleFactor})`);
+
+    elem.addEventListener('click', () => {
+      if (entry.fields.linkToProjectPage) {
+        this.props.history.push(('/inthenews/' + entry.fields.linkToProjectPage.fields.slug));
+      } else {
+        this.openMapModal(id);
+      }
+    });
   }
 
   closeMapModal(modalKey) {
@@ -141,6 +168,7 @@ export default class MapPage extends React.Component {
       return <Loader />;
     }
 
+    const Overlay = this.props.areas;
     return (
       <div>
         <div style={{ margin: "auto", width: 100 + "%", position: "relative" }}>
@@ -151,6 +179,9 @@ export default class MapPage extends React.Component {
             style={
               { width: 100 + "%" } //"Peapack Gladstone Map"
             }
+          />
+          <Overlay 
+            className={"map-areas-svg" + (this.props.areasCss && this.props.areasCss !== undefined ? " "+this.props.areasCss : "")}
           />
           <div className="map-info" onClick={this.showTownModal.bind(this)}>
             <span className="map-info-icon">i</span>
@@ -242,3 +273,4 @@ export default class MapPage extends React.Component {
     );
   }
 }
+export default withRouter(MapPage);

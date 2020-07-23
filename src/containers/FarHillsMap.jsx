@@ -1,5 +1,6 @@
 import React from "react";
-import FarHillsMapLocation from "../assets/images/maps/ff.jpg";
+import FarHillsMapLocation from "../assets/maps/farhills/Farhills-map-3B-Final.jpg";
+import {ReactComponent as FarHillsMapLocationAreas} from '../assets/maps/farhills/Far_Hills_Map-svg-3B-Final.svg';
 import MapPage from "./MapPage";
 
 export default class FarHillsMap extends React.PureComponent {
@@ -29,6 +30,8 @@ export default class FarHillsMap extends React.PureComponent {
       <MapPage
         name="FarHills"
         image={FarHillsMapLocation}
+        areas={FarHillsMapLocationAreas}
+        areasCss="far-hills-svg"
         imageAlt="Far Hills Map"
         heading="Far Hills"
         townContent={this.townContent}

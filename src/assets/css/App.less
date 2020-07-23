@@ -374,7 +374,24 @@ p {
     rgba(0, 0, 0, 0.5) 30%,
     rgba(0, 0, 0, 0) 70%
   );
-  animation: growShadow 4s linear;
+
+  --hero-intro-anim-duration: 3s;
+  --hero-title-anim-duration: 2.5s;
+  --hero-title-anim-delay: 1s;
+}
+
+.shadow-box .home-hero-intro {
+  animation: growShadow var(--hero-intro-anim-duration) linear;
+}
+
+.shadow-box .home-hero-title {
+  animation: growShadow var(--hero-title-anim-duration) linear both;
+  animation-delay: var(--hero-title-anim-delay);
+}
+
+.shadow-box .home-hero-arrow {
+  animation: growShadow 3s linear both;
+  animation-delay: 2s;
 }
 
 @keyframes growShadow {
@@ -622,7 +639,20 @@ p {
   line-height: inherit;
 }
 
+.map-areas-svg {
+  position: absolute;
+  top: 0;
+}
+
+#area-1 {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 991px) {
+  .map-areas-svg {
+    display: none;
+  }
+
   .investment-fund-label {
     display: none;
   }
@@ -5910,4 +5940,38 @@ sup {
 }
 .news-wrapper .news-project-nav .read-more {
   font-weight: normal !important;
+}
+
+.map-areas-svg {
+  z-index: 10;
+}
+
+.map-area.hoverable {
+  cursor: pointer;
+  transition: transform .3s;
+}
+.map-area path {
+  transition: all .3s;
+}
+
+.map-area.hoverable:hover {
+  transform: var(--map-area-transform);
+  position: relative;
+}
+
+.map-area.hoverable:hover path:first-child,
+.map-area.hoverable:hover polygon:first-child,
+.map-area.hoverable:hover polyline:first-child {
+  fill: #b4c3e4;
+}
+.map-area.hoverable:hover path:not(:first-child),
+.map-area:not(#area-FarHillsProper).hoverable:hover g:nth-child(2) polyline,
+.map-area.hoverable:hover g:nth-child(2) rect {
+  fill: #145276;
+}
+
+.far-hills-svg {
+  position: absolute;
+  top: 1px;
+  right: -3px;
 }

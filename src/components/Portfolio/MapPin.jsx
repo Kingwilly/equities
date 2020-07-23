@@ -1,6 +1,5 @@
 import React from "react";
-import { Tooltip, Modal, Badge } from "antd";
-import MapPinLocation from "../../assets/images/map-pin.png";
+import { Modal } from "antd";
 const Carousel = require("react-responsive-carousel").Carousel;
 
 export default class MapPin extends React.PureComponent {
@@ -66,7 +65,7 @@ export default class MapPin extends React.PureComponent {
   render() {
     return (
       <div>
-        <Tooltip
+        {/* <Tooltip
           title={this.props.address}
           placement={this.if240(this.props.number)}
         >
@@ -119,7 +118,7 @@ export default class MapPin extends React.PureComponent {
               {this.props.number}
             </p>
           </div>
-        </Tooltip>
+        </Tooltip> */}
         <Modal
           closable={true}
           style={{
