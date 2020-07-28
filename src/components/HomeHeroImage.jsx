@@ -24,7 +24,7 @@ const HeroImage = props => {
       >
         <div className="home-hero-block">
           <div className="shadow-box">
-            <h3 className="home-hero-intro">URBANISM</h3>
+            <h3 className="home-hero-intro">SUBURBANISM</h3>
             <h1 className="home-hero-title">
               Redefined<sup>SM</sup>
             </h1>
