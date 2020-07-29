@@ -94,7 +94,7 @@ export default function FirmOverview() {
           </p>
           <br />
           <p>
-            At Melillo Equities, we strive to achieve our vision of "Urbanism
+            At Melillo Equities, we strive to achieve our vision of "Suburbanism
             Redefined” by embracing a comprehensive approach to confronting
             these challenges, focusing on:
           </p>
