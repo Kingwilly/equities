@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { NavLink } from "react-router-dom";
-import PeapackGladstoneMap from "../assets/images/maps/Gladstone-intro-2.jpg";
-import FarHillsMap from "../assets/images/maps/Farhills-intro-2.jpg";
-import BernardsvilleMap from "../assets/images/maps/Bernardsville-intro-2.jpg";
+import PeapackGladstoneMap from "../assets/maps/gladstone/Melillo-Equities-intro-map-peapack-gladstone.jpg";
+import FarHillsMap from "../assets/maps/farhills/Melillo-Equities-intro-map-farhills.jpg";
+import BernardsvilleMap from "../assets/maps/bernadsville/Melillo-Equities-intro-map-bernardsville.jpg";
 import windowSize from "react-window-size";
 
 const PortfolioSection = props => {

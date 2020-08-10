@@ -3,6 +3,7 @@ import HeroImage from "../components/HeroImage";
 import Landscape from "../assets/images/csr-landscape.jpg";
 import OverviewBackground from "../assets/images/vemont.jpg";
 import UrbanPlanningBackground from "../assets/images/urban-planning.png";
+import AnthonyMelillo from "../assets/images/Anthony-Melillo-Headshot-1-Final.jpg";
 import LocationBox from "../components/LocationBox";
 
 import { Row, Col, Anchor } from "antd";
@@ -142,6 +143,7 @@ export default function FirmOverview() {
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 30 }}>
         <Col className="paragraph" xs={24} md={{ span: 8, offset: 4 }}>
           <p>
+            <img className="anthony-melillo-img" src={AnthonyMelillo} alt="Anthony Melillo" />
             Driven by his passion to rebuild underserved urban communities, Mr.
             Melillo recognized that revitalization efforts were being
             disproportionately directed toward larger MSAs and positioned

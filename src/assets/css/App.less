@@ -5959,14 +5959,17 @@ sup {
   position: relative;
 }
 
-.map-area.hoverable:hover path:first-child,
-.map-area.hoverable:hover polygon:first-child,
-.map-area.hoverable:hover polyline:first-child {
+// .map-area.hoverable:hover path:first-child,
+// .map-area.hoverable:hover polygon:first-child,
+// .map-area.hoverable:hover polyline:first-child,
+// #area-LackawannaAvenue.map-area.hoverable:hover path.st0 {
+.map-area.hoverable:hover .st0 {
   fill: #b4c3e4;
 }
-.map-area.hoverable:hover path:not(:first-child),
-.map-area:not(#area-FarHillsProper).hoverable:hover g:nth-child(2) polyline,
-.map-area.hoverable:hover g:nth-child(2) rect {
+// .map-area:not(#area-LackawannaAvenue).hoverable:hover path:not(:first-child),
+// .map-area:not(#area-FarHillsProper).hoverable:hover g:nth-child(2) polyline,
+// .map-area.hoverable:hover g:nth-child(2) rect {
+.map-area.hoverable:hover .st1 {
   fill: #145276;
 }
 
@@ -5974,4 +5977,17 @@ sup {
   position: absolute;
   top: 1px;
   right: -3px;
+}
+
+.anthony-melillo-img {
+    float: left;
+    width: 29%;
+    padding: 0 10px 0px 0;
+}
+
+@media screen and (max-width: 991px) {  
+    .anthony-melillo-img {
+        width: 100%;
+        padding: 0 30px 10px 30px;
+    }
 }
