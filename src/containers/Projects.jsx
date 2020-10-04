@@ -28,6 +28,7 @@ export default class Projects extends React.PureComponent {
       "fields.slug[in]": slug,
     })
     .then(entries => {
+        console.log(entries)
       if (!entries) this.setState({error: {message: "No entry was found for " + slug}});
       else this.setState({project: entries.items[0]});
     })
@@ -159,6 +160,15 @@ export default class Projects extends React.PureComponent {
                   alt={"Melillo Equities"}
                 />
               </Col>
+              { this.state.project.fields.thumbnails &&
+                <Col xs={24} md={{ span: 18, offset: 2 }}>
+                  <div className="project-img-thumbnail-area">
+                    { this.state.project.fields.thumbnails.map(tn => (
+                      <img src={tn.fields.file.url} />
+                    ))}
+                  </div>
+                </Col>
+              }
               <Col xs={24} md={{ span: 18, offset: 2 }}>
                 <div
                   dangerouslySetInnerHTML={{
