@@ -155,9 +155,6 @@ class Navigation extends React.PureComponent {
               </NavLink>
             </Menu.Item>
             <SubMenu key="sub1" title={"PORTFOLIO"}>
-              <Menu.Item key="/portfolio/bernardsville">
-                <NavLink to="/portfolio/bernardsville">Bernardsville</NavLink>
-              </Menu.Item>
               <Menu.Item key="/portfolio/peapack-gladstone">
                 <NavLink to="/portfolio/peapack-gladstone">
                   Peapack & Gladstone
@@ -165,6 +162,9 @@ class Navigation extends React.PureComponent {
               </Menu.Item>
               <Menu.Item key="/portfolio/farhills">
                 <NavLink to="/portfolio/farhills">Far Hills</NavLink>
+              </Menu.Item>
+              <Menu.Item key="/portfolio/bernardsville">
+                <NavLink to="/portfolio/bernardsville">Bernardsville</NavLink>
               </Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" title={"PRESS"}>
