@@ -1,7 +1,7 @@
 import React from "react";
 import DocumentTitle from "react-document-title";
 import Loader from '../components/ui/Loader';
-import { Row, Col, Anchor, Collapse, Modal } from "antd";
+import { Row, Col, Anchor, Collapse } from "antd";
 import { HashLink } from "react-router-hash-link";
 import DOMPurify from 'dompurify';
 import client from '../contentfulClient';
@@ -20,7 +20,7 @@ export default class Projects extends React.PureComponent {
     project: null,
     news: [],
     error: null,
-    modalShown: false,
+    modalShown: 0,
   };
 
   componentDidMount() {
@@ -122,12 +122,23 @@ export default class Projects extends React.PureComponent {
                 sm={0}
                 md={{ span: 18, offset: 2 }}
               >
-                <img
-                  src={ this.state.project.fields.mainImage.fields.file.url }
-                  alt={"Melillo Equities"}
-                  className={"project-hero-img" + ( this.state.project.fields.thumbnails ? " showPointer" : "" )}
-                  onClick={() => this.setState({modalShown: 0})}
-                />
+                { this.state.project.fields.thumbnails
+                  ? <Carousel className="carousel-thumbs-below" showThumbs={true} selectedItem={this.state.modalShown}>
+                      <img src={this.state.project.fields.mainImage.fields.file.url} alt="Main Project" />
+                      { this.state.project.fields.thumbnails.map(tn => (
+                        <img 
+                          src={tn.fields.file.url}
+                          alt="Project"
+                        />
+                      ))}
+                    </Carousel>
+                  :  <img
+                    src={ this.state.project.fields.mainImage.fields.file.url }
+                    alt={"Melillo Equities"}
+                    className={"project-hero-img" + ( this.state.project.fields.thumbnails ? " showPointer" : "" )}
+                    onClick={() => this.setState({sliderIdx: 0})}
+                  />
+                }
               </Col>
               <Col
                 xs={0}
@@ -159,25 +170,24 @@ export default class Projects extends React.PureComponent {
                 lg={0}
                 xl={0}
               >
-                <img
-                  src={ this.state.project.fields.mainImage.fields.file.url }
-                  alt={"Melillo Equities"}
-                  className={"project-hero-img" + ( this.state.project.fields.thumbnails ? " showPointer" : "" )}
-                  onClick={() => this.setState({modalShown: 0})}
-                />
+                { this.state.project.fields.thumbnails
+                  ? <Carousel className="carousel-thumbs-below" showThumbs={true} selectedItem={this.state.modalShown}>
+                      <img src={this.state.project.fields.mainImage.fields.file.url} alt="Main Project" />
+                      { this.state.project.fields.thumbnails.map(tn => (
+                        <img 
+                          src={tn.fields.file.url}
+                          alt="Project"
+                        />
+                      ))}
+                    </Carousel>
+                  :  <img
+                    src={ this.state.project.fields.mainImage.fields.file.url }
+                    alt={"Melillo Equities"}
+                    className={"project-hero-img" + ( this.state.project.fields.thumbnails ? " showPointer" : "" )}
+                    onClick={() => this.setState({sliderIdx: 0})}
+                  />
+                }
               </Col>
-              { this.state.project.fields.thumbnails &&
-                <Col xs={24} md={{ span: 18, offset: 2 }}>
-                  <div className="project-img-thumbnail-area">
-                    { this.state.project.fields.thumbnails.map((tn, idx) => (
-                      <img 
-                        src={tn.fields.file.url} 
-                        onClick={() => this.setState({modalShown: 1+idx})}
-                      />
-                    ))}
-                  </div>
-                </Col>
-              }
               <Col xs={24} md={{ span: 18, offset: 2 }}>
                 <div
                   dangerouslySetInnerHTML={{
@@ -220,73 +230,6 @@ export default class Projects extends React.PureComponent {
             </Row>
           </div>
         </DocumentTitle>
-        { this.state.project.fields.thumbnails &&
-          <Modal
-            closable={true}
-            style={{
-              top: 50,
-              width: 95 + "%"
-            }}
-            visible={this.state.modalShown !== false}
-            onOk={() => this.setState({modalShown: false})}
-            onCancel={() => this.setState({modalShown: false})}
-            footer={false}
-            maskClosable={true}
-          >
-            <div
-              onClick={() => this.setState({modalShown: false})}
-              style={{
-                float: "right",
-                padding: 20 + "px",
-                borderLeft: "1px solid #b3b3b3",
-                cursor: "pointer"
-              }}
-            >
-              <div className="modal-close">
-                <svg
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 25 25"
-                  className="modal-close-svg"
-                  style={{ enableBackground: "new 0 0 25 25" }}
-                >
-                  <path
-                    d="M13.2,12.5L24.4,1.2c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0L12.5,11.8L1.2,0.5C1,0.4,0.7,0.4,0.5,0.5S0.4,1,0.5,1.2
-                    l11.3,11.3L0.5,23.7c-0.2,0.2-0.2,0.5,0,0.7c0.1,0.1,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1l11.3-11.3l11.3,11.3c0.1,0.1,0.2,0.1,0.3,0.1
-                    s0.2,0,0.3-0.1c0.2-0.2,0.2-0.5,0-0.7L13.2,12.5z"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <br />
-              <div>
-                <Carousel showThumbs={true} selectedItem={this.state.modalShown}>
-                  <img src={this.state.project.fields.mainImage.fields.file.url} />
-                  { this.state.project.fields.thumbnails.map(tn => (
-                    <img 
-                      src={tn.fields.file.url}
-                    />
-                  ))}
-                </Carousel>
-              </div>
-            {/* <br />
-            <h1
-              style={{
-                color: "#1d4a63",
-                textAlign: "center",
-                fontSize: 26 + "px",
-                fontFamily: "kepler-std-display"
-              }}
-            >
-              {this.state.project.fields.title.toUpperCase()}
-            </h1>
-            <br /> */}
-          </Modal>
-        }
       </React.Fragment>
     );
   }

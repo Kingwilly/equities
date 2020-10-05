@@ -38,7 +38,7 @@ const Contact = () => {
               27 ROUTE 202
               <br />
               SUITE 6<br />
-              FAR HILLS, NJ 07921
+              FAR HILLS, NJ 07931
             </h4>
             <br />
             <h3 className="contact-sub-header">CALL</h3>

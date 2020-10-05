@@ -46,7 +46,7 @@ const CallOut = () => {
             </Link>
             <div className="footer-text">
               27 ROUTE 202, SUITE 6,
-              <br className="visible-mobile" /> FAR HILLS, NJ 07921{" "}
+              <br className="visible-mobile" /> FAR HILLS, NJ 07931{" "}
               <br className="visible-mobile" />
               <div>1+908 234 9561</div>
             </div>
