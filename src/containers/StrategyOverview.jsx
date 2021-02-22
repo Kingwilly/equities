@@ -153,7 +153,6 @@ export default function StrategyOverview() {
             </li>
             <li>Lease Form: NN, NNN, Modified Gross</li>
             <li>Tenant: Single or Multiple Tenants</li>
-            <li>Transaction Size: Up to $10 million</li>
             <li>Investment Hold Period: Perpetuity</li>
             <li>Target Returns: Core to Opportunistic</li>
           </ul>
