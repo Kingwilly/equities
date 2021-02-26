@@ -29,7 +29,6 @@ export default class Projects extends React.PureComponent {
         "sys.id": id,
     })
     .then(entries => {
-      console.log(entries)
       if (!entries) this.setState({error: {message: "No entry was found for " + slug}});
       else {
         this.setState({post: entries.items[0]});

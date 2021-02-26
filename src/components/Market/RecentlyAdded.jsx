@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default class RecentlyAdded extends React.PureComponent {
   renderRecentEntries() {
     return this.props.entries.map(function(post) {
-      console.log(post);
       return (
         <Link
           to={"/marketarticle/" + post.sys.id}

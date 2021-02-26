@@ -3,10 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1700.8 939.5" style="enable-background:new 0 0 1700.8 939.5;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#E3E8F5;stroke:#8FADD3;stroke-miterlimit:10;}
-	.st1{fill:#545454;}
-	.st2{fill:none;stroke:#8EADD3;stroke-miterlimit:10;}
-	.st3{fill:#959595;}
+	.map-area .st0{fill:#E3E8F5;stroke:#8FADD3;stroke-miterlimit:10;}
+	.map-area .st1{fill:#545454;}
+	.map-area .st2{fill:none;stroke:#8EADD3;stroke-miterlimit:10;}
+	.map-area .st3{fill:#959595;}
 </style>
 <g id="area-27Route202" class="map-area">
 	<polygon id="_x32_7_Route_202_property" class="st0" points="770,698.3 832.8,791.6 936,741.8 923,700.3 912.2,698.3 865.8,629.6 	

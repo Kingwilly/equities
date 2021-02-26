@@ -31,8 +31,6 @@ class Navigation extends React.PureComponent {
       key => this.state.openKeys.indexOf(key) === -1
     );
 
-    console.log(this.props.location);
-    console.log(openKeys);
     this.setState({
       openKeys: latestOpenKey ? [latestOpenKey] : []
     });

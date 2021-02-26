@@ -1,6 +1,6 @@
 import React from "react";
-import BernardsvilleMapLocation from "../assets/maps/bernadsville/Bernardsville-map-3B-Final.jpg";
-import {ReactComponent as BernardsvilleMapLocationAreas} from '../assets/maps/bernadsville/Bernardsville_Map-4-svg-Final.svg';
+import BernardsvilleMapLocation from "../assets/maps/bernadsville/MAP.jpg";
+import {ReactComponent as BernardsvilleMapLocationAreas} from '../assets/maps/bernadsville/MAP.svg';
 import MapPage from "./MapPage";
 
 export default class BernardsvilleMap extends React.PureComponent {

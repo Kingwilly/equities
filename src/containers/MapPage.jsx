@@ -38,17 +38,17 @@ class MapPage extends React.Component {
     const selector = '#area-'+id;
     const elem = document.querySelector(selector);
     if (!elem) return;
-    const offset = elem.getBBox();
-    elem.style.setProperty(
-      'transform-origin',
-      (offset.x + .5 * offset.width) + 'px ' + (offset.y + .5 * offset.height) + 'px'
-    );
+    // const offset = elem.getBBox();
+    // elem.style.setProperty(
+    //   'transform-origin',
+    //   (offset.x + .5 * offset.width) + 'px ' + (offset.y + .5 * offset.height) + 'px'
+    // );
 
     elem.classList.add('hoverable');
 
-    const scaleByPx = 5;
-    const scaleFactor = (offset.width + 2 * scaleByPx) / offset.width;
-    elem.style.setProperty('--map-area-transform', `scale(${scaleFactor})`);
+    // const scaleByPx = 5;
+    // const scaleFactor = (offset.width + 2 * scaleByPx) / offset.width;
+    // elem.style.setProperty('--map-area-transform', `scale(${scaleFactor})`);
 
     elem.addEventListener('click', () => {
       if (entry.fields.linkToProjectPage) {

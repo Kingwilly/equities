@@ -1,6 +1,6 @@
 import React from "react";
-import PeapackGladstoneMapLocation from "../assets/maps/gladstone/Gladstone-tax-map-svg-3C-Final.jpg";
-import { ReactComponent as PeapackGladstoneMapAreas } from '../assets/maps/gladstone/Gladstone-Tax-Map-jschake-3.svg';
+import PeapackGladstoneMapLocation from "../assets/maps/gladstone/PG-MAP.jpg";
+import { ReactComponent as PeapackGladstoneMapAreas } from '../assets/maps/gladstone/PG-MAP-2.svg';
 import MapPage from "./MapPage";
 
 export default React.memo(function(props) {

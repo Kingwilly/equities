@@ -1471,6 +1471,19 @@ svg {
   font-size: 27px;
 }
 
+.not-in-view .color-fade-in,
+.not-in-view.color-fade-in {
+  color: #434148;
+  transition: color 1s ease-in-out; 
+}
+
+.in-view .color-fade-in {
+  transition: color 1s ease-in-out; 
+}
+.in-view .delay-1 {
+  transition-delay: 1s;
+}
+
 .blue-main-header {
   color: #9fbdcd;
   font-family: proxima-nova-black, sans-serif;
@@ -5965,7 +5978,9 @@ sup {
   cursor: pointer;
   transition: transform .3s;
 }
-.map-area path {
+.map-area path,
+.map-area polygon,
+.map-area polyline {
   transition: all .3s;
 }
 
@@ -5978,20 +5993,20 @@ sup {
 // .map-area.hoverable:hover polygon:first-child,
 // .map-area.hoverable:hover polyline:first-child,
 // #area-LackawannaAvenue.map-area.hoverable:hover path.st0 {
-.map-area.hoverable:hover .st0 {
-  fill: #b4c3e4;
-}
+// .map-area.hoverable:hover .st0 {
+//   fill: #b4c3e4;
+// }
 // .map-area:not(#area-LackawannaAvenue).hoverable:hover path:not(:first-child),
 // .map-area:not(#area-FarHillsProper).hoverable:hover g:nth-child(2) polyline,
 // .map-area.hoverable:hover g:nth-child(2) rect {
-.map-area.hoverable:hover .st1 {
-  fill: #145276;
-}
+// .map-area.hoverable:hover .st1 {
+//   fill: #145276;
+// }
 
 .far-hills-svg {
   position: absolute;
-  top: 1px;
-  right: -3px;
+  // top: 1px;
+  // right: -3px;
 }
 
 .anthony-melillo-img {

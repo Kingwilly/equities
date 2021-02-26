@@ -30,7 +30,7 @@ export default class Projects extends React.PureComponent {
       "fields.slug[in]": slug,
     })
     .then(entries => {
-        console.log(entries)
+    
       if (!entries) this.setState({error: {message: "No entry was found for " + slug}});
       else this.setState({project: entries.items[0]});
     })

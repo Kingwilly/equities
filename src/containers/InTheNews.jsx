@@ -15,6 +15,7 @@ export default class InTheNews extends React.PureComponent {
   componentDidMount() {
     client.getEntries({
       content_type: "projects",
+      order: "-fields.publishDate",
     })
     .then((entries) => {
       this.setState({ entries: entries.items });

@@ -28,16 +28,17 @@ export default function StrategyOverview() {
         gutter={45}
         style={{ paddingTop: 30 }}
       >
-        <Col
-          className="paragraph-emphasis"
-          xs={24}
-          md={{ span: 8, offset: 4 }}
-          style={{ paddingBottom: 30 }}
+        <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-20%"
         >
-          <span>MELILLO EQUITIES</span> pursues investment opportunities
-          capitalizing on the development, repositioning and/or recapitalization
-          of properties within supply-constrained submarkets.
-        </Col>
+          <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 8, offset: 4 }} style={{ paddingBottom: 30 }}>
+            <span>MELILLO EQUITIES</span> pursues investment opportunities
+            capitalizing on the development, repositioning and/or recapitalization
+            of properties within supply-constrained submarkets.
+          </Col>
+        </InViewMonitor>
         <Col className="paragraph" xs={24} md={8}>
           <p>
             Within these markets, we source a variety of asset classes across
@@ -56,19 +57,27 @@ export default function StrategyOverview() {
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
-        <Col
-          className="paragraph-emphasis"
-          xs={24}
-          md={{ span: 16, offset: 4 }}
+        <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-20%"
         >
-          We have identified two market arbitrage opportunities as our value-add
-          propositions.
-        </Col>
+          <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 16, offset: 4 }}>
+            We have identified two market arbitrage opportunities as our value-add
+            propositions.
+          </Col>
+        </InViewMonitor>
       </Row>
       <Row className="gutter-row" gutter={45}>
         <Col xs={24} md={{ span: 8, offset: 4 }} style={{ paddingTop: 20 }}>
           <Col span={6}>
-            <span className="large-number">1</span>
+            <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in">1</span>
+            </InViewMonitor>
           </Col>
           <Col className="paragraph" span={18}>
             <p>
@@ -101,7 +110,13 @@ export default function StrategyOverview() {
         </Col>
         <Col xs={24} md={{ span: 8 }} style={{ paddingTop: 20 }}>
           <Col span={6}>
-            <span className="large-number">2</span>
+            <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in delay-1">2</span>
+            </InViewMonitor>
           </Col>
           <Col className="paragraph" span={18}>
             <p>
@@ -136,13 +151,26 @@ export default function StrategyOverview() {
 
       <Row style={{ paddingTop: 120 }} id="acquisition-criteria">
         <Col xs={24} md={{ span: 16, offset: 4 }}>
-          <h1 className="blue-main-header">ACQUISITION CRITERIA</h1>
+          <InViewMonitor
+            classNameNotInView="not-in-view"
+            classNameInView="in-view"
+            intoViewMargin="-50%"
+          >
+            <h1 className="blue-main-header color-fade-in">ACQUISITION CRITERIA</h1>
+          </InViewMonitor>
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-          <span>AT MELILLO EQUITIES</span> we actively seek opportunities
-          meeting the following general investment criteria:
+          <InViewMonitor
+            classNameNotInView="not-in-view"
+            classNameInView="in-view"
+            intoViewMargin="-45%"
+          >
+            <div className="color-fade-in"><span>AT MELILLO EQUITIES</span> we actively seek opportunities
+            meeting the following general investment criteria:
+            </div>
+          </InViewMonitor>
         </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
@@ -167,10 +195,17 @@ export default function StrategyOverview() {
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
-        <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-          <span>WE ALSO LOOK BEYOND</span> the property line to the community
-          itself, assessing fundamental strengths in the following areas:
-        </Col>
+          <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
+        <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-45%"
+        >
+            <div className="color-fade-in"><span>WE ALSO LOOK BEYOND</span> the property line to the community
+            itself, assessing fundamental strengths in the following areas:
+            </div>
+        </InViewMonitor>
+          </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
             <li>Demographics Trends</li>
@@ -189,10 +224,17 @@ export default function StrategyOverview() {
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
-        <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-          <span>LASTLY,</span> we closely examine all factors we deem to
-          inherently limit supply within a community, such as the following:
-        </Col>
+          <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
+        <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-45%"
+        >
+            <div className="color-fade-in">"<span>LASTLY,</span> we closely examine all factors we deem to
+            inherently limit supply within a community, such as the following:
+            </div>
+        </InViewMonitor>
+          </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
             <li>Municipal Historic Boards</li>
@@ -217,24 +259,38 @@ export default function StrategyOverview() {
         id="competitive-edge"
       >
         <Col xs={24} md={{ span: 12, offset: 6 }}>
-          <h1 className="blue-main-header">COMPETITIVE EDGE</h1>
+          <InViewMonitor
+            classNameNotInView="not-in-view"
+            classNameInView="in-view"
+            intoViewMargin="-50%"
+          >
+            <h1 className="blue-main-header color-fade-in">COMPETITIVE EDGE</h1>
+          </InViewMonitor>
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 30 }}>
-        <Col
-          className="paragraph-emphasis"
-          xs={24}
-          md={{ span: 12, offset: 6 }}
+        <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-45%"
         >
-          <span>AS A BOUTIQUE FIRM,</span> we remain unrelenting in our efforts
-          to unlock value for our clients. However, our capacity to consistently
-          outperform in an ever-changing marketplace is built upon our
-          continuous application of the following fundamental principles.
-        </Col>
+          <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 12, offset: 6 }}>
+            <span>AS A BOUTIQUE FIRM,</span> we remain unrelenting in our efforts
+            to unlock value for our clients. However, our capacity to consistently
+            outperform in an ever-changing marketplace is built upon our
+            continuous application of the following fundamental principles.
+          </Col>
+        </InViewMonitor>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <span className="large-number">1</span>
+            <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in">1</span>
+            </InViewMonitor>
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">STRATEGIC POSITIONING</h3>
@@ -254,7 +310,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <span className="large-number">2</span>
+          <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in">2</span>
+            </InViewMonitor>
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">COLLABORATIVE PARTNERING</h3>
@@ -275,7 +337,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <span className="large-number">3</span>
+          <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in">3</span>
+            </InViewMonitor>
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">RISK MITIGATION</h3>
@@ -297,7 +365,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <span className="large-number">4</span>
+          <InViewMonitor
+              classNameNotInView="not-in-view"
+              classNameInView="in-view"
+              intoViewMargin="-20%"
+            >
+              <span className="large-number color-fade-in">4</span>
+            </InViewMonitor>
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">VERTICAL INTEGRATION</h3>
