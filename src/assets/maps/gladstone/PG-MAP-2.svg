@@ -5,7 +5,7 @@
 <style type="text/css">
 	.map-area .st1{fill:none;stroke:#969696;stroke-width:2;}
 	.map-area .st2{fill:#676767;}
-	.map-area .st3{fill:#d8d9d8;}
+	.map-area .st3{fill:#d8d9d8;stroke:#969696;}
 	.map-area .st4{fill:#d8d9d8;}
 	.map-area .st5{fill:#676767;}
 	.map-area .st6{fill:#969696;}
@@ -22,19 +22,19 @@
 
 	.map-area.hoverable:hover .st1{fill:none;stroke:#8FADD2;stroke-width:2;}
 	.map-area.hoverable:hover .st2{fill:#1a5474;}
-	.map-area.hoverable:hover .st3{fill:#e1e8f4;}
-	.map-area.hoverable:hover .st4{fill:#e1e8f4;}
+	.map-area.hoverable:hover .st3{fill:#b4c3e4;stroke:#8FADD2;}
+	.map-area.hoverable:hover .st4{fill:#b4c3e4;}
 	.map-area.hoverable:hover .st5{fill:#1a5474;}
 	.map-area.hoverable:hover .st6{fill:#8FADD2;}
 	.map-area.hoverable:hover .st7{display:none;}
-	.map-area.hoverable:hover .st8{display:inline;fill:#e1e8f4;}
-	.map-area.hoverable:hover .st9{display:inline;fill:#e1e8f4;}
+	.map-area.hoverable:hover .st8{display:inline;fill:#b4c3e4;}
+	.map-area.hoverable:hover .st9{display:inline;fill:#b4c3e4;}
 	.map-area.hoverable:hover .st10{display:inline;fill:url(#SVGID_1_);}
 	.map-area.hoverable:hover .st11{display:inline;fill:#1a5474;}
 	.map-area.hoverable:hover .st12{display:inline;fill:url(#SVGID);}
 	.map-area.hoverable:hover .st13{fill:#1a5474;}
 	.map-area.hoverable:hover .st14{fill:#1a5474;}
-	.map-area.hoverable:hover .st15{fill:#e1e8f4;stroke:#8FADD2;stroke-width:0.52;stroke-miterlimit:10;}
+	.map-area.hoverable:hover .st15{fill:#b4c3e4;stroke:#8FADD2;stroke-width:0.52;stroke-miterlimit:10;}
 	.map-area.hoverable:hover .st0{fill:none;}
 </style>
 <pattern  y="3549" width="72" height="72" patternUnits="userSpaceOnUse" id="SVGID_3_" viewBox="72.2 -72 72 72" style="overflow:visible;">
@@ -1091,7 +1091,7 @@
 		"/>
 	<path class="st5" d="M356.9,633.9l7.1-2.9l4.8,11.8l-7.2,3L356.9,633.9z"/>
 </g>
-<g id="area-Lot12.01MainStreetGladstone" class="map-area">
+<g id="area-Lot12-01MainStreetGladstone" class="map-area">
 	<path class="st15" d="M297,571.4l15.9,30l-2.8,5.1l-70.8,17l-6.2-35.8L297,571.4z"/>
 	<polygon class="st5" points="268.6,594.2 282.4,588.9 288.9,606 276,610.6 	"/>
 </g>

@@ -1,8 +1,9 @@
 import React from "react";
 import { Modal } from "antd";
+import { withRouter } from 'react-router-dom';
 const Carousel = require("react-responsive-carousel").Carousel;
 
-export default class MapPin extends React.PureComponent {
+class MapPin extends React.PureComponent {
   if240(number) {
     if (number === "240") {
       return "leftTop";
@@ -195,6 +196,10 @@ export default class MapPin extends React.PureComponent {
               fontSize: 26 + "px",
               fontFamily: "kepler-std-display"
             }}
+            onClick={this.props.linkTitle
+              ? () => this.props.history.push(this.props.linkTitle)
+              : undefined
+            }
           >
             {this.props.formalAddress}
           </h1>
@@ -213,3 +218,4 @@ export default class MapPin extends React.PureComponent {
     );
   }
 }
+export default withRouter(MapPin);

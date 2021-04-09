@@ -28,24 +28,24 @@ export default function StrategyOverview() {
         gutter={45}
         style={{ paddingTop: 30 }}
       >
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView="not-in-view"
           classNameInView="in-view"
           intoViewMargin="-20%"
-        >
+        > */}
           <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 8, offset: 4 }} style={{ paddingBottom: 30 }}>
-            <span>MELILLO EQUITIES</span> pursues investment opportunities
-            capitalizing on the development, repositioning and/or recapitalization
-            of properties within supply-constrained submarkets.
+            <span>MELILLO EQUITIES</span> pursues investment opportunities capitalizing on the development, 
+            repositioning and/or recapitalization of properties within the Boroughs of Peapack-Gladstone, 
+            Far Hills and Bernardsville. 
           </Col>
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
         <Col className="paragraph" xs={24} md={8}>
           <p>
-            Within these markets, we source a variety of asset classes across
-            the full risk-return spectrum. Once invested, we generate returns
-            through unwavering dedication to our investment thesis, which
-            integrates leading Urban Planning principles with our comprehensive
-            land-use plans.
+            Within these markets, we source a variety of investment 
+            opportunities that span the full risk-return spectrum. 
+            Once invested, we generate returns through unwavering 
+            dedication to our investment thesis which relies primarily 
+            on the geographic concentration of portfolio assets.
           </p>
         </Col>
         <Col md={{ span: 4 }} style={{ zIndex: 9999 }} className="anchor-menu">
@@ -57,52 +57,48 @@ export default function StrategyOverview() {
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView="not-in-view"
           classNameInView="in-view"
           intoViewMargin="-20%"
-        >
+        > */}
           <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 16, offset: 4 }}>
-            We have identified two market arbitrage opportunities as our value-add
-            propositions.
+            Two arbitrage opportunities serve as the cornerstone of our investment thesis:
           </Col>
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
       </Row>
       <Row className="gutter-row" gutter={45}>
         <Col xs={24} md={{ span: 8, offset: 4 }} style={{ paddingTop: 20 }}>
           <Col span={6}>
-            <InViewMonitor
+            {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in">1</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
           </Col>
           <Col className="paragraph" span={18}>
             <p>
-              The existence of pricing disparities between select markets with
-              comparable underlying characteristics.
+              Two arbitrage opportunities serve as the cornerstone of our investment thesis:
             </p>
             <Collapse style={{ paddingTop: 20 }} bordered={false}>
               <Panel header="read more">
                 <p className="dropdown-content">
-                  Within the last decade, revitalization efforts spearheaded by
-                  real estate firms have been quite impactful; cities once
-                  constrained by inadequate parking, dated infrastructure and
-                  limited amenities are now being revitalized into thriving
-                  urban centers. This resurgence has led to increased enthusiasm
-                  for urban living, further solidifying attractive profit
-                  margins for participating firms. However, capital continues to
-                  be disproportionately allocated to larger urban centers, while
-                  smaller submarkets remain capital-stricken. This is largely
-                  due to firms’ inability to identify scalable investments,
-                  along with their reluctance to navigate the diverse sets of
-                  ordinances that govern each town. The resulting disparity has
-                  meant that larger Metropolitan Statistical Areas (MSAs) have
-                  become oversaturated while overlooked submarkets with
-                  comparable underlying characteristics continue to provide
-                  ample investment opportunities.
+                Within the last decade, revitalization efforts spearheaded by 
+                real estate firms have been quite impactful; cities once constrained 
+                by inadequate parking, dated infrastructure and limited amenities 
+                are now being revitalized into thriving urban centers. This 
+                resurgence has led to increased enthusiasm for urban living, further 
+                solidifying attractive profit margins for participating firms. 
+                However, capital continues to be disproportionately allocated to larger 
+                urban centers, while smaller submarkets remain capital-stricken. 
+                This is largely due to firms’ inability to identify scalable investments, 
+                along with their reluctance to navigate the diverse sets of ordinances 
+                that govern each town. The resulting disparity has meant that larger 
+                Metropolitan Statistical Areas (MSAs) have become oversaturated while 
+                overlooked submarkets with comparable underlying characteristics continue 
+                to provide ample investment opportunities.
                 </p>
               </Panel>
             </Collapse>
@@ -110,38 +106,33 @@ export default function StrategyOverview() {
         </Col>
         <Col xs={24} md={{ span: 8 }} style={{ paddingTop: 20 }}>
           <Col span={6}>
-            <InViewMonitor
+            {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in delay-1">2</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
           </Col>
           <Col className="paragraph" span={18}>
             <p>
-              The existence of synergies upon achieving critical mass within
-              supply-constrained submarkets.
+              The ability to dictate market dynamics upon achieving critical mass within supply-constrained submarkets.
             </p>
             <Collapse style={{ paddingTop: 20 }} bordered={false}>
               <Panel header="read more">
                 <p className="dropdown-content">
-                  At Melillo Equities, we define critical mass as the point at
-                  which a firm achieves sufficient market share to realize the
-                  benefits derived from economies of scale and economies of
-                  scope. Despite the significant competitive advantages that
-                  such a position confers, most firms encounter two key
-                  challenges that indelibly hinder their progress. First,
-                  binding term limits force divestiture upon a fund’s maturity,
-                  which ultimately precludes systematic AUM growth. Secondly,
-                  real estate firms frequently disregard the importance of
-                  geographical concentration, amassing disconnected portfolios
-                  that account for a relatively small percentage of the overall
-                  supply within any given market. We believe that any viable
-                  roadmap for achieving critical mass begins by flouting these
-                  two common but counterproductive practices and committing to
-                  long-term, open-ended investment structures within
-                  supply-constrained submarkets.
+                At Melillo Equities, we define critical mass as a point in which a firm can 
+                realize the significant competitive advantages derived from economies of 
+                scale and scope, with the ability to dictate market dynamics. Despite the 
+                significant competitive advantages that such a position confers, most firms 
+                encounter two key challenges that indelibly hinder their progress. First, 
+                binding term limits force divestiture upon a fund’s maturity, which ultimately 
+                precludes systematic AUM growth. Secondly, real estate firms frequently 
+                disregard the importance of geographical concentration, amassing disconnected 
+                portfolios that account for a relatively small percentage of the overall supply 
+                within any given market. We believe that any viable roadmap for achieving critical 
+                mass begins by flouting these two common but counterproductive practices and 
+                committing to long-term, open-ended investment structures within supply-constrained submarkets.
                 </p>
               </Panel>
             </Collapse>
@@ -151,26 +142,39 @@ export default function StrategyOverview() {
 
       <Row style={{ paddingTop: 120 }} id="acquisition-criteria">
         <Col xs={24} md={{ span: 16, offset: 4 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
             classNameNotInView="not-in-view"
             classNameInView="in-view"
             intoViewMargin="-50%"
-          >
+          > */}
             <h1 className="blue-main-header color-fade-in">ACQUISITION CRITERIA</h1>
-          </InViewMonitor>
+          {/* </InViewMonitor> */}
         </Col>
+      </Row>
+      <Row className="gutter-row" gutter={45} style={{ paddingTop: 30 }}>
+        {/* <InViewMonitor
+          classNameNotInView="not-in-view"
+          classNameInView="in-view"
+          intoViewMargin="-45%"
+        > */}
+          <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 12, offset: 6 }}>
+            <span>OUR CAPACITY</span> to consistently outperform in 
+            an ever-changing marketplace stems from the steadfast application 
+            of our guiding principles and acquisition criteria. 
+          </Col>
+        {/* </InViewMonitor> */}
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
             classNameNotInView="not-in-view"
             classNameInView="in-view"
             intoViewMargin="-45%"
-          >
+          > */}
             <div className="color-fade-in"><span>AT MELILLO EQUITIES</span> we actively seek opportunities
             meeting the following general investment criteria:
             </div>
-          </InViewMonitor>
+          {/* </InViewMonitor> */}
         </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
@@ -195,15 +199,15 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView="not-in-view"
           classNameInView="in-view"
           intoViewMargin="-45%"
-        >
+        > */}
             <div className="color-fade-in"><span>WE ALSO LOOK BEYOND</span> the property line to the community
             itself, assessing fundamental strengths in the following areas:
             </div>
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
           </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
@@ -224,15 +228,15 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
           <Col className="paragraph-emphasis" xs={24} md={{ span: 8, offset: 4 }}>
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView="not-in-view"
           classNameInView="in-view"
           intoViewMargin="-45%"
-        >
+        > */}
             <div className="color-fade-in">"<span>LASTLY,</span> we closely examine all factors we deem to
             inherently limit supply within a community, such as the following:
             </div>
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
           </Col>
         <Col className="paragraph" xs={24} md={8}>
           <ul>
@@ -258,38 +262,38 @@ export default function StrategyOverview() {
         id="competitive-edge"
       >
         <Col xs={24} md={{ span: 12, offset: 6 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
             classNameNotInView="not-in-view"
             classNameInView="in-view"
             intoViewMargin="-50%"
-          >
+          > */}
             <h1 className="blue-main-header color-fade-in">COMPETITIVE EDGE</h1>
-          </InViewMonitor>
+          {/* </InViewMonitor> */}
         </Col>
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 30 }}>
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView="not-in-view"
           classNameInView="in-view"
           intoViewMargin="-45%"
-        >
+        > */}
           <Col className="paragraph-emphasis color-fade-in" xs={24} md={{ span: 12, offset: 6 }}>
             <span>AS A BOUTIQUE FIRM,</span> we remain unrelenting in our efforts
             to unlock value for our clients. However, our capacity to consistently
             outperform in an ever-changing marketplace is built upon our
             continuous application of the following fundamental principles.
           </Col>
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-            <InViewMonitor
+            {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in">1</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">STRATEGIC POSITIONING</h3>
@@ -309,13 +313,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in">2</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">COLLABORATIVE PARTNERING</h3>
@@ -336,13 +340,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in">3</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">RISK MITIGATION</h3>
@@ -364,13 +368,13 @@ export default function StrategyOverview() {
       </Row>
       <Row className="gutter-row" gutter={45} style={{ paddingTop: 20 }}>
         <Col xs={24} md={{ span: 2, offset: 6 }}>
-          <InViewMonitor
+          {/* <InViewMonitor
               classNameNotInView="not-in-view"
               classNameInView="in-view"
               intoViewMargin="-20%"
-            >
+            > */}
               <span className="large-number color-fade-in">4</span>
-            </InViewMonitor>
+            {/* </InViewMonitor> */}
         </Col>
         <Col className="paragraph" xs={24} md={{ span: 10 }}>
           <h3 className="section-header-blue">VERTICAL INTEGRATION</h3>

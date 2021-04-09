@@ -10,7 +10,7 @@
 	.map-area .st3{fill:#969696;}
 	.map-area .st4{font-family:'KeplerStd-BoldDisp';}
 	.map-area .st5{font-size:12.4px;}
-	.map-area.hoverable:hover .st0{fill:#e1e8f4;stroke:#8FADD2;stroke-width:1.24;stroke-miterlimit:10;}
+	.map-area.hoverable:hover .st0{fill:#b4c3e4;stroke:#8FADD2;stroke-width:1.24;stroke-miterlimit:10;}
 	.map-area.hoverable:hover .st1{fill:#1a5474;}
 	.map-area.hoverable:hover .st2{fill:none;stroke:#8FADD2;stroke-width:1.24;stroke-miterlimit:10;}
 	.map-area.hoverable:hover .st3{fill:#8FADD2;}

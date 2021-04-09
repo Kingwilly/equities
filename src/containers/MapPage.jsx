@@ -26,7 +26,8 @@ class MapPage extends React.Component {
         entries.items.forEach((entry) => {
           if (entry.fields.id) {
             openDict[entry.fields.id] = false;
-            this.initAreaHoverAndClick(entry.fields.id, entry);
+            if (!entry.fields.id.includes('.'))
+              this.initAreaHoverAndClick(entry.fields.id, entry);
           }
         });
         this.setState({ openDict: openDict });
@@ -44,7 +45,11 @@ class MapPage extends React.Component {
     //   (offset.x + .5 * offset.width) + 'px ' + (offset.y + .5 * offset.height) + 'px'
     // );
 
-    elem.classList.add('hoverable');
+    if (!entry.fields.linkToProjectPage) {
+      elem.classList.add('no-cursor');
+    } else {
+      elem.classList.add('hoverable');
+    }
 
     // const scaleByPx = 5;
     // const scaleFactor = (offset.width + 2 * scaleByPx) / offset.width;
@@ -54,7 +59,7 @@ class MapPage extends React.Component {
       if (entry.fields.linkToProjectPage) {
         this.props.history.push(('/inthenews/' + entry.fields.linkToProjectPage.fields.slug));
       } else {
-        this.openMapModal(id);
+        // this.openMapModal(id);
       }
     });
   }
@@ -126,6 +131,10 @@ class MapPage extends React.Component {
         var imageCarasoul = null;
       }
 
+      if (!entry.fields.linkToProjectPage) {
+        return null;
+      }
+
       return (
         <MapPin
           key={entry.fields.id}
@@ -149,6 +158,7 @@ class MapPage extends React.Component {
           location={entry.fields.locationName}
           architect={entry.fields.architect}
           client={entry.fields.client}
+          linkTitle={'/inthenews/' + entry.fields.linkToProjectPage.fields.slug}
         />
       );
     });

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3000 1668"
+	 style="enable-background:new 0 0 3000 1668;" xml:space="preserve">
+<style type="text/css">
+	.map-area .st0{fill:#d9e0f0;stroke:#969696;stroke-width:1.24;stroke-miterlimit:10;}
+	.map-area .st1{fill:#676767;}
+	.map-area .st2{fill:none;stroke:#969696;stroke-width:1.24;stroke-miterlimit:10;}
+	.map-area .st3{fill:#969696;}
+	.map-area .st4{font-family:'KeplerStd-BoldDisp';}
+	.map-area .st5{font-size:12.4px;}
+	.map-area.hoverable:hover .st0{fill:#b4c3e4;stroke:#8FADD2;stroke-width:1.24;stroke-miterlimit:10;}
+	.map-area.hoverable:hover .st1{fill:#1a5474;}
+	.map-area.hoverable:hover .st2{fill:none;stroke:#8FADD2;stroke-width:1.24;stroke-miterlimit:10;}
+	.map-area.hoverable:hover .st3{fill:#8FADD2;}
+	.map-area.hoverable:hover .st4{font-family:'KeplerStd-BoldDisp';}
+	.map-area.hoverable:hover .st5{font-size:12.4px;}
+</style>
+		<g id="area-27Route202" class="map-area">
+			<polygon id="_x32_7_Route_202_property_2_" class="st0" points="1268.9,1015.1 1346.6,1130.6 1474.5,1069 1458.4,1017.6 
+				1445.1,1015.1 1387.5,930 			"/>
+			<polygon id="_x32_7_Route_202_building_4_" class="st1" points="1371.8,1091.7 1394.9,1084.9 1395.2,1086 1423.2,1077.6 
+				1422.8,1076.2 1445.5,1068.8 1440.9,1055.1 1429.8,1058.6 1418.9,1024.2 1404.7,1028.5 1411.7,1051.7 1389.5,1059.1 
+				1382.8,1035.3 1369,1039.6 1370.2,1043.9 1358.7,1047.4 			"/>
+			<polygon id="_x32_7_Route_202_building_1_" class="st1" points="1420.8,1013.6 1438.4,1008.1 1444.7,1016.7 1447.1,1024.3 
+				1448.3,1023.9 1458.1,1038.2 1434.6,1046.4 1431.2,1036.9 1428.3,1037.6 			"/>
+			<polygon class="st1" points="1445.2,1053.7 1464.2,1047.7 1468.6,1062.8 1464.7,1064 1464.9,1064.9 1453.8,1068.1 1453.5,1067.2 
+				1449.8,1068.5 			"/>
+		</g>
+		<g id="area-FarHillsProper" class="map-area">
+			<polygon id="Far_Hills_Proper_Property_12_" class="st0" points="1628.1,946.4 1565,857.6 1562.7,854.4 1410.3,639.7 
+				1484.1,651.9 1540.6,659.2 1598,666.4 1700.6,746 1688.1,762.3 1687.3,761.5 1682.1,768.2 1684.3,770 1675.8,781.7 1733.3,826.2 
+				1680.5,894.2 1662.7,915.2 			"/>
+			<g id="Far_Hills_Proper_Lines_2" class="map-area">
+				<polyline id="Far_Hills_Proper_Property_5_" class="st2" points="1562.7,854.4 1588.4,836.5 1609.4,867.4 1621.2,858.8 
+					1662.7,915.2 				"/>
+				<polyline id="Far_Hills_Proper_Property_4_" class="st2" points="1680.5,894.2 1662.1,879.4 1640,851.4 1637.8,852.9 
+					1635.2,849.2 1621.2,858.8 				"/>
+				<polyline id="Far_Hills_Proper_Property_3_" class="st2" points="1635.8,848.7 1593.8,789.4 1542.2,825.5 				"/>
+				<polyline id="Far_Hills_Proper_Property_2_" class="st2" points="1520.5,794.9 1571.9,758.5 1593.8,789.4 				"/>
+				<polyline id="Far_Hills_Proper_Property_1_" class="st2" points="1484.1,651.9 1480.8,674.3 1487.1,686.7 1459.8,709.5 				"/>
+			</g>
+			<polygon id="Far_Hills_Proper_Building_26_" class="st1" points="1613.2,890.7 1623.3,883.5 1628.8,891 1626.4,892.7 1630,897.5 
+				1635.2,893.7 1640.6,901.4 1643.8,902.9 1646,906.1 1646.6,909.1 1647.4,910.3 1644.5,912.4 1646.3,914.9 1640.9,919 
+				1638.1,915.2 1630.8,920.6 1625.3,913 1622.1,915.2 1621.1,913.9 1618,914 1616.3,911.7 1617,908.6 1616.1,907.3 1619.1,905.2 
+				1615,899.7 1618.1,897.5 			"/>
+			<polygon id="Far_Hills_Proper_Building_12_" class="st1" points="1433.5,666.7 1447.8,656.5 1474.3,693.7 1459.8,703.7 			"/>
+			<polygon id="Far_Hills_Proper_Building_11_" class="st1" points="1463.9,712.4 1475,728.1 1507.8,698.7 1493.4,685.4 			"/>
+			<polyline id="Far_Hills_Proper_Building_10_" class="st1" points="1536.2,682.6 1543.8,675 1615.1,745 1607.7,752.1 			"/>
+			<polygon id="Far_Hills_Proper_Building_9_" class="st1" points="1614,745.9 1624.7,735.3 1657.1,768.1 1646.4,778.8 
+				1645.6,778.1 1637.9,786 1629.2,777.7 1637.4,769.5 			"/>
+			<polygon id="Far_Hills_Proper_Building_8_" class="st1" points="1575.3,761.7 1581.5,757.1 1611.1,799.2 1620.2,792.9 
+				1634.7,813.8 1636.1,812.8 1658.1,844.9 1693.5,873.1 1679.2,890.8 1659.5,875 1640.4,848.1 1637.2,850.3 			"/>
+			<polygon id="Far_Hills_Proper_Building_7_" class="st1" points="1585.9,683.8 1591.5,674.6 1617.7,690.6 1611.9,699.5 			"/>
+			<polygon id="Far_Hills_Proper_Building_6_" class="st1" points="1615.1,700.4 1624.5,688.2 1698.7,745.8 1682.1,768.2 
+				1645.9,740.4 1653.7,730.3 			"/>
+			<polygon id="Far_Hills_Proper_Building_5_" class="st1" points="1666.3,848 1668.7,845 1666.5,843.3 1675.1,832.5 1706.1,857.2 
+				1694.9,871 			"/>
+			<polygon id="Far_Hills_Proper_Building_4_" class="st1" points="1531.2,791 1535.8,797.3 1536.1,799.8 1538,802.5 1540.3,803.4 
+				1546.9,812.7 1560.9,802.5 1545.2,780.8 			"/>
+			<polygon id="Far_Hills_Proper_Building_3_" class="st1" points="1552.7,821.2 1564.3,837.9 1591.9,818.4 1605.2,836.8 
+				1619.3,826.9 1602.2,802.7 1596.7,806.5 1588.8,795.6 			"/>
+			<polygon id="Far_Hills_Proper_Building_2_" class="st1" points="1641.1,881 1655.9,900.6 1656.7,900 1658.3,902.2 1662.9,898.7 
+				1661.3,896.5 1661.9,896 1664.3,895.9 1667.6,893.6 1668.3,891.3 1669,890.8 1656.4,874.5 1649.9,879.5 1647.4,876.1 			"/>
+			<polygon id="Far_Hills_Proper_Building_1_" class="st1" points="1523.4,685.1 1530.9,677.4 1623.5,767.5 1615.9,775.2 			"/>
+			<text id="Far_Hills_Proper_-_L.V._Ludlow_2_" transform="matrix(1 0 0 1 1513.5255 740.1406)"><tspan x="0" y="0" class="st3 st4 st5">L.V.</tspan><tspan x="-9.3" y="12.4" class="st3 st4 st5">Ludlow</tspan></text>
+		</g>
+</svg>

@@ -6,7 +6,7 @@
 <style type="text/css">
 	.map-area .st0{fill:#d8d9d8;stroke:#969696;stroke-miterlimit:10;}
 	.map-area .st1{fill:#676767;}
-	.map-area.hoverable:hover .st0{fill:#e1e8f4;stroke:#8FADD2;stroke-miterlimit:10;}
+	.map-area.hoverable:hover .st0{fill:#b4c3e4;stroke:#8FADD2;stroke-miterlimit:10;}
 	.map-area.hoverable:hover .st1{fill:#1a5474;}
 </style>
 	<g id="area-59MineBrookRoad" class="map-area">
